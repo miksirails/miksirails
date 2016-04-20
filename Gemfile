@@ -11,9 +11,3 @@ gem "middleman", ">= 4.0.0"
 gem "middleman-livereload"
 
 gem "slim"
-
-source "https://rails-assets.org" do
-  gem "rails-assets-bespoke.js"
-  gem "rails-assets-bespoke-keys"
-  gem "rails-assets-bespoke-touch"
-end

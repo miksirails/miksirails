@@ -23,6 +23,8 @@ configure :development do
   activate :livereload
 end
 
+activate :directory_indexes
+
 webpack_cmd = if build?
   "BUILD_PRODUCTION=1  ./node_modules/webpack/bin/webpack.js --bail -p"
 else

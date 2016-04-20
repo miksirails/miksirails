@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var Clean = require('clean-webpack-plugin');
+var webpack = require("webpack");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var Clean = require("clean-webpack-plugin");
 
 var definePlugin = new webpack.DefinePlugin({
   __DEVELOPMENT__: JSON.stringify(JSON.parse(process.env.BUILD_DEVELOPMENT || false)),
@@ -10,30 +10,30 @@ var definePlugin = new webpack.DefinePlugin({
 var siteConfig = {
   entry: {
     index: [
-      './source/stylesheets/index.scss',
-      './source/javascripts/index.js'
+      "./source/stylesheets/index.scss",
+      "./source/javascripts/index.js"
     ]
   },
 
   resolve: {
-    root: __dirname + '/source/javascripts',
+    root: __dirname + "/source/javascripts",
   },
 
   output: {
-    path: __dirname + '/tmp/dist',
-    filename: 'javascripts/[name].bundle.js',
+    path: __dirname + "/tmp/dist",
+    filename: "javascripts/[name].bundle.js",
   },
 
   module: {
     loaders: [
       {
-        test: /assets\/javascripts\/.*\.js$/,
+        test: /.*\.js$/,
         exclude: /node_modules|tmp|vendor/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         query: {
           // cacheDirectory: true,
-          // presets: ['es2015', 'stage-0', 'babel-preset-react', 'react']
-          presets: ['es2015', 'stage-0']
+          // presets: ["es2015", "stage-0", "babel-preset-react", "react"]
+          presets: ["es2015", "stage-0"]
         },
       },
 
@@ -64,7 +64,7 @@ var siteConfig = {
 
   plugins: [
     definePlugin,
-    new Clean(['tmp']),
+    new Clean(["tmp"]),
     new ExtractTextPlugin("stylesheets/index.bundle.css"),
     new webpack.ProvidePlugin({
       $: "jquery",
