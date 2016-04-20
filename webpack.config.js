@@ -37,7 +37,7 @@ var siteConfig = {
         },
       },
 
-      { test: require.resolve("jquery"), loader: "expose?$" },
+      // { test: require.resolve("jquery"), loader: "expose?$" },
 
       {
         test: /[\\\/]vendor[\\\/]modernizr\.js$/,
