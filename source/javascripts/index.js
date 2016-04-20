@@ -4,8 +4,18 @@ var bespoke = require("bespoke"),
     hash = require('bespoke-hash'),
     nebula = require("bespoke-theme-nebula");
 
-$(function() {
-  var deck = bespoke.from("#presentation", [nebula(), keys(), touch(), hash()]);
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+
+ready(function() {
+  if (document.getElementById("presentation")) {
+    var deck = bespoke.from("#presentation", [nebula(), keys(), touch(), hash()]);
+  }
 });
 
 if (__DEVELOPMENT__) {

@@ -65,12 +65,12 @@ var siteConfig = {
   plugins: [
     definePlugin,
     new Clean(["tmp"]),
-    new ExtractTextPlugin("stylesheets/index.bundle.css"),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
+    new ExtractTextPlugin("stylesheets/index.bundle.css")
+    // new webpack.ProvidePlugin({
+    //   $: "jquery",
+    //   jQuery: "jquery",
+    //   "window.jQuery": "jquery"
+    // }),
   ],
 };
 
