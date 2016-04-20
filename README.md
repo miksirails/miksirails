@@ -32,4 +32,4 @@
   ./bin/middleman server
   ```
 
-5. Go to http://localhost:4567
+5. Go to <http://localhost:4567>
