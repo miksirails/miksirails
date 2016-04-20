@@ -8,7 +8,7 @@ html
     / Use title if it's in the page YAML frontmatter
     title= current_page.data.title || "Middleman"
 
-    = stylesheet_link_tag :site
-    = javascript_include_tag :all
+    = stylesheet_link_tag "index.bundle"
+    = javascript_include_tag "index.bundle"
   body class=page_classes
     = yield

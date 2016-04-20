@@ -23,6 +23,18 @@ configure :development do
   activate :livereload
 end
 
+webpack_cmd = if build?
+  "BUILD_PRODUCTION=1  ./node_modules/webpack/bin/webpack.js --bail -p"
+else
+  "BUILD_DEVELOPMENT=1 ./node_modules/webpack/bin/webpack.js --watch -d --progress --color"
+end
+
+activate :external_pipeline,
+  name: :webpack,
+  command: webpack_cmd,
+  source: "tmp/dist",
+  latency: 1
+
 ###
 # Helpers
 ###
