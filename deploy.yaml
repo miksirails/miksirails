@@ -1,0 +1,4 @@
+default:
+  root: "build/"
+  bucket: "miksirails.fi"
+  region: "eu-west-1"

@@ -5,6 +5,10 @@
 * Ruby 2.3+
 * Node.js 5+
 
+## Deployment
+
+⚠️ **THE `master` branch is deployed *automatically*! If you make changes to the `master` branch, they WILL go live on the internet.**
+
 ## Development environment set-up
 
 1. Clone the repo
