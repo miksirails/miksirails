@@ -10,7 +10,7 @@ before_install:
   - mkdir -p "$HOME/bin"
   - export PATH="$HOME/bin:$PATH"
   - wget https://github.com/EagerIO/Stout/releases/download/v1.2.3/stout-linux -O "$HOME/bin/stout"
-  - echo 'gem: --no-ri --no-rdoc' > ~/.gemrc
+  - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 
 before_script:
   - "npm install"
