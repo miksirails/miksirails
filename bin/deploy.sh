@@ -18,7 +18,7 @@ fi
 
 log "Starting deploy"
 
-stout deploy --key "$AWS_AMAZON_KEY_DEV" --secret "$AWS_AMAZON_SECRET_DEV"
+stout deploy --key "$AWS_ACCESS_KEY_ID" --secret "$AWS_SECRET_ACCESS_KEY"
 
 if [ $? -eq 0 ]; then
     log "The deploy seems to have succeeded"
