@@ -30,7 +30,7 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: stout deploy
+  script: ./bin/deploy.sh
   on:
     branch: master
 
