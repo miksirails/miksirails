@@ -27,6 +27,10 @@ install:
 script:
   - "./bin/middleman build"
 
+branches:
+  only:
+    - master
+
 deploy:
   skip_cleanup: true
   provider: script
