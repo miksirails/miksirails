@@ -1,0 +1,92 @@
+//
+// Media query
+$mq-points: (
+  xs: 320,
+  s: 612,
+  m: 768,
+  l: 980,
+  xl: 1200,
+  xl2: 1420
+);
+
+@mixin mq($point, $max: null) {
+  @if map-has-key($mq-points, $point) {
+    $point: map-get($mq-points, $point);
+    @if $max {
+      @media screen and (max-width:#{rem($point - 1)}) {
+        @content;
+      }
+    }
+    @else {
+      @media screen and (min-width:#{rem($point)}) {
+        @content;
+      }
+    }
+  }
+  @else  {
+    @error "No such breakpoint: `#{$point}`.";
+  }
+}
+
+//
+// Grid mixins
+// Create the grid for a given size
+// This will loop over the number of columns and create a css class
+// for each. If it's the last gride size, then let's not add a float
+@mixin grid-core($size) {
+  @for $i from 1 through $grid-columns {
+    .col-#{$size}-#{$i} {
+      // Ignore float for the largest grid size
+      @if $i < $grid-columns {
+        float: left;
+      }
+      @include span-columns($i);
+    }
+    // If it's not the screen-xs, then let's add push and pull helper classes
+    @if $size != "xs" {
+      .col-#{$size}-push-#{$i} {
+        left: flex-grid($i, $grid-columns) + flex-gutter($grid-columns);
+      }
+      .col-#{$size}-pull-#{$i} {
+        right: flex-grid($i, $grid-columns) + flex-gutter($grid-columns);
+      }
+    }
+  }
+}
+@mixin grid-shift($size) {
+  @for $i from 0 through $grid-columns {
+    .col-#{$size}-shift-#{$i} {
+      @include shift($i);
+    }
+  }
+}
+
+// Omega reset mixin for responsive block grid layout. Used to reset the omega set in a previous media query.
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+//
+// Transition mixin (overwrite bourbon mixin)
+@mixin trans-prefix($value, $prefix: "") {
+  $slice: str-slice(inspect($value), 0, 9);
+  @if $slice == "transform" {
+    #{$prefix}transition: #{$prefix}#{$value};
+  } @else {
+    #{$prefix}transition: $value;
+  }
+}
+@mixin transition($properties...) {
+  $spec: ();
+  @if length($properties) > 1 {
+    @for $i from 1 through length($properties) {
+      $spec: append($spec, nth($properties, $i), comma);
+    }
+  } @else {
+    $spec: $properties;
+  }
+  @include trans-prefix($spec, -webkit-);
+  @include trans-prefix($spec, -moz-);
+  @include trans-prefix($spec);
+}

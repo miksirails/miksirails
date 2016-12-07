@@ -1,0 +1,106 @@
+//
+// Automatical margins between child elements
+// (aligned to a 1rem baseline grid)
+
+.child-margins-x-0-125 > * + * { margin-left: 0.125rem; }
+.child-margins-x-0-25  > * + * { margin-left: 0.25rem; }
+.child-margins-x-0-5   > * + * { margin-left: 0.5rem; }
+.child-margins-x-0-75  > * + * { margin-left: 0.75rem; }
+.child-margins-x-1     > * + * { margin-left: 1rem; }
+.child-margins-x-1-25  > * + * { margin-left: 1.25rem; }
+.child-margins-x-1-5   > * + * { margin-left: 1.5rem; }
+.child-margins-x-2     > * + * { margin-left: 2rem; }
+.child-margins-x-3     > * + * { margin-left: 3rem; }
+.child-margins-x-4     > * + * { margin-left: 4rem; }
+.child-margins-x-5     > * + * { margin-left: 5rem; }
+
+.child-margins-y-0-125 > * + * { margin-top: 0.125rem; }
+.child-margins-y-0-25  > * + * { margin-top: 0.25rem; }
+.child-margins-y-0-5   > * + * { margin-top: 0.5rem; }
+.child-margins-y-0-75  > * + * { margin-top: 0.75rem; }
+.child-margins-y-1     > * + * { margin-top: 1rem; }
+.child-margins-y-1-25  > * + * { margin-top: 1.25rem; }
+.child-margins-y-1-5   > * + * { margin-top: 1.5rem; }
+.child-margins-y-2     > * + * { margin-top: 2rem; }
+.child-margins-y-3     > * + * { margin-top: 3rem; }
+.child-margins-y-4     > * + * { margin-top: 4rem; }
+.child-margins-y-5     > * + * { margin-top: 5rem; }
+
+.child-margins-x-hairline > * + * { margin-left: 1px; }
+.child-margins-y-hairline > * + * { margin-top:  1px; }
+
+//
+//Paddings
+
+.padding-hairline { padding: 1px; }
+
+.padding-0-125 { padding: 0.125rem; }
+.padding-0-25  { padding: 0.25rem; }
+.padding-0-5   { padding: 0.5rem; }
+.padding-0-75  { padding: 0.75rem; }
+.padding-1     { padding: 1rem; }
+.padding-1-25  { padding: 1.25rem; }
+.padding-1-5   { padding: 1.5rem; }
+.padding-2     { padding: 2rem; }
+.padding-3     { padding: 3rem; }
+.padding-4     { padding: 4rem; }
+.padding-5     { padding: 5rem; }
+
+.padding-top    { padding-right: 0; padding-bottom: 0; padding-left:   0; }
+.padding-right  { padding-top:   0; padding-bottom: 0; padding-left:   0; }
+.padding-bottom { padding-top:   0; padding-right:  0; padding-left:   0; }
+.padding-left   { padding-top:   0; padding-right:  0; padding-bottom: 0; }
+
+.padding-x { padding-top:  0; padding-bottom: 0; }
+.padding-y { padding-left: 0; padding-right:  0; }
+
+.padding-top-0    { padding-top: 0; }
+.padding-right-0  { padding-right: 0; }
+.padding-bottom-0 { padding-bottom: 0; }
+.padding-left-0   { padding-left: 0; }
+
+//
+// Margins
+
+.margin-auto   { margin: auto; }
+.margin-auto-x { margin-left: auto; margin-right: auto; }
+.margin-auto-y { margin-top: auto; margin-bottom: auto; }
+
+.margin-hairline { margin: 1px; }
+
+.margin-0-125 { margin: 0.125rem; }
+.margin-0-25  { margin: 0.25rem; }
+.margin-0-5   { margin: 0.5rem; }
+.margin-0-75  { margin: 0.75rem; }
+.margin-1     { margin: 1rem; }
+.margin-1-25  { margin: 1.25rem; }
+.margin-1-5   { margin: 1.5rem; }
+.margin-2     { margin: 2rem; }
+.margin-3     { margin: 3rem; }
+.margin-4     { margin: 4rem; }
+.margin-5     { margin: 5rem; }
+
+.negative-margin-0-125 { margin: -0.125rem; }
+.negative-margin-0-25  { margin: -0.25rem; }
+.negative-margin-0-5   { margin: -0.5rem; }
+.negative-margin-0-75  { margin: -0.75rem; }
+.negative-margin-1     { margin: -1rem; }
+.negative-margin-1-25  { margin: -1.25rem; }
+.negative-margin-1-5   { margin: -1.5rem; }
+.negative-margin-2     { margin: -2rem; }
+.negative-margin-3     { margin: -3rem; }
+.negative-margin-4     { margin: -4rem; }
+.negative-margin-5     { margin: -5rem; }
+
+.margin-top    { margin-right: 0; margin-bottom: 0; margin-left:   0; }
+.margin-right  { margin-top:   0; margin-bottom: 0; margin-left:   0; }
+.margin-bottom { margin-top:   0; margin-right:  0; margin-left:   0; }
+.margin-left   { margin-top:   0; margin-right:  0; margin-bottom: 0; }
+
+.margin-x { margin-top:  0; margin-bottom: 0; }
+.margin-y { margin-left: 0; margin-right:  0; }
+
+.margin-top-0    { margin-top: 0; }
+.margin-right-0  { margin-right: 0; }
+.margin-bottom-0 { margin-bottom: 0; }
+.margin-left-0   { margin-left: 0; }

@@ -1,0 +1,75 @@
+$max-width: 480px;
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+//
+// Display
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.round        { border-radius: 50%; }
+
+.table {display: table;}
+.table-cell {display: table-cell;}
+
+//
+// Align
+.vertical-top {vertical-align: top;}
+.vertical-middle {vertical-align: middle;}
+.vertical-bottom {vertical-align: bottom;}
+
+//
+// Sizes
+.width-100       { width: 100%; }
+.min-width-100   { min-width: 100%; }
+.width-auto      { width: auto; }
+.width-100vw     { width: 100vw; }
+.min-width-100vw { min-width: 100vw; }
+.width-hairline  { width: 1px; }
+
+.width-0-125 { width: 0.125rem; }
+.width-0-25  { width: 0.25rem; }
+.width-0-5   { width: 0.5rem; }
+.width-0-75  { width: 0.75rem; }
+.width-1     { width: 1rem; }
+.width-1-25  { width: 1.25rem; }
+.width-1-5   { width: 1.5rem; }
+.width-2     { width: 2rem; }
+.width-3     { width: 3rem; }
+.width-4     { width: 4rem; }
+.width-5     { width: 5rem; }
+
+.height-100       { height: 100%; }
+.min-height-100   { min-height: 100%; }
+.height-auto      { height: auto; }
+.height-100vh     { height: 100vh; }
+.min-height-100vh { min-height: 100vh; }
+.height-hairline  { height: 1px; }
+
+.height-0-125 { height: 0.125rem; }
+.height-0-25  { height: 0.25rem; }
+.height-0-5   { height: 0.5rem; }
+.height-0-75  { height: 0.75rem; }
+.height-1     { height: 1rem; }
+.height-1-25  { height: 1.25rem; }
+.height-1-5   { height: 1.5rem; }
+.height-2     { height: 2rem; }
+.height-3     { height: 3rem; }
+.height-4     { height: 4rem; }
+.height-5     { height: 5rem; }
+
+@include mq(m, max) {
+  .unflex-m {
+    display: block;
+  }
+
+  .unflex-m > * {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .unflex-m > * + * {
+    margin-top: 1rem;
+  }
+}

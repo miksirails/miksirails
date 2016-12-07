@@ -1,0 +1,24 @@
+//
+// Borders
+.borders   { border-style: solid; border-width: 1px; }
+
+.borders-v { border-style: solid; border-width: 1px 0;  }
+.borders-h { border-style: solid; border-width: 0   1px;}
+
+.border-left   { border-width: 0 0 0 1px; border-style: solid; }
+.border-top    { border-width: 1px 0 0 0; border-style: solid; }
+.border-right  { border-width: 0 1px 0 0; border-style: solid; }
+.border-bottom { border-width: 0 0 1px 0; border-style: solid; }
+
+
+//
+// Automatical borders around child elements
+.child-borders   > *,
+.child-borders-x > *,
+.child-borders-y > * { border-style: solid; border-width: 0; }
+
+.child-borders         { border: 0 solid; border-width: 1px 0 0 1px; }
+.child-borders > * + * { border-width: 0 1px 1px 0; }
+
+.child-borders-x > * + * { border-left-width: 1px; }
+.child-borders-y > * + * { border-top-width:  1px; }

@@ -1,0 +1,51 @@
+//
+//  Flexbox
+
+.flex {
+  @include display(flex);
+  @include align-items(stretch);
+}
+
+.grow,
+.grow-children > * {
+  @include flex-basis(auto);
+  @include flex-grow(1);
+}
+
+.even,
+.even-children > * {
+  @include flex-basis(0);
+  @include flex-grow(1);
+}
+
+.wrap         { @include flex-wrap(wrap); }
+.flex.inline  { @include display(inline-flex); }
+
+.align-stretch  { @include align-items(stretch); }
+.align-start    { @include align-items(flex-start); }
+.align-center   { @include align-items(center); }
+.align-end      { @include align-items(flex-end); }
+.align-baseline { @include align-items(baseline); }
+
+.justify        { @include justify-content(space-between); }
+.justify-around { @include justify-content(space-around); }
+.justify-start  { @include justify-content(flex-start); }
+.justify-center { @include justify-content(center); }
+.justify-end    { @include justify-content(flex-end); }
+
+.vertical         { @include flex-direction(column); }
+.vertical-reverse { @include flex-direction(column-reverse); }
+.reverse          { @include flex-direction(row-reverse); }
+
+.content-stretch        { @include align-content(stretch); }
+.content-start          { @include align-content(flex-start); }
+.content-center         { @include align-content(center); }
+.content-end            { @include align-content(flex-end); }
+.content-justify        { @include align-content(space-between); }
+.content-justify-around { @include align-content(space-around); }
+
+.self-stretch  { @include align-self(stretch); }
+.self-start    { @include align-self(flex-start); }
+.self-center   { @include align-self(center); }
+.self-end      { @include align-self(flex-end); }
+.self-baseline { @include align-self(baseline); }

@@ -1,0 +1,168 @@
+//
+// Variables
+$color-1: #CC0000;
+$color-2: #D5E9F6;
+$color-3: #FFF9D8;
+
+$color-green: #9CCC3E;
+$color-yellow: #FFEB3B;
+$color-red: #CC0000;
+$color-white: #FFF;
+$color-black: #000;
+
+
+$color-gray-50: #FAFAFA;
+$color-gray-200: #EEEEEE;
+$color-gray-300: #E0E0E0;
+$color-gray-400: #BDBDBD;
+$color-gray-500: #9E9E9E;
+$color-gray-600: #757575;
+$color-gray-700: #616161;
+$color-gray-900: #212121;
+
+$color-gray-lightest: #FAFAFA;
+$color-gray-light: #E0E0E0;
+$color-gray: #9E9E9E;
+$color-gray-medium: #757575;
+$color-gray-dark: #616161;
+$color-gray-darkest: #212121;
+
+//
+// Classes
+.color-1   { color:            $color-1; }
+.bg-1      { background-color: $color-1; }
+.border-color-1  { border-color:     $color-1; }
+.fill-1    { fill:             $color-1; }
+.stroke-1  { stroke:           $color-1; }
+.outline-1 { outline-color:    $color-1; }
+
+.color-2   { color:            $color-2; }
+.bg-2      { background-color: $color-2; }
+.border-color-2  { border-color:     $color-2; }
+.fill-2    { fill:             $color-2; }
+.stroke-2  { stroke:           $color-2; }
+.outline-2 { outline-color:    $color-2; }
+
+.color-3   { color:            $color-3; }
+.bg-3      { background-color: $color-3; }
+.border-color-3  { border-color:     $color-3; }
+.fill-3    { fill:             $color-3; }
+.stroke-3  { stroke:           $color-3; }
+.outline-3 { outline-color:    $color-3; }
+
+.color-green   { color:            $color-green; }
+.bg-green      { background-color: $color-green; }
+.border-color-green  { border-color:     $color-green; }
+.fill-green    { fill:             $color-green; }
+.stroke-green  { stroke:           $color-green; }
+.outline-green { outline-color:    $color-green; }
+
+.color-yellow   { color:            $color-yellow; }
+.bg-yellow      { background-color: $color-yellow; }
+.border-color-yellow  { border-color:     $color-yellow; }
+.fill-yellow    { fill:             $color-yellow; }
+.stroke-yellow  { stroke:           $color-yellow; }
+.outline-yellow { outline-color:    $color-yellow; }
+
+.color-red   { color:            $color-red; }
+.bg-red      { background-color: $color-red; }
+.border-color-red  { border-color:     $color-red; }
+.fill-red    { fill:             $color-red; }
+.stroke-red  { stroke:           $color-red; }
+.outline-red { outline-color:    $color-red; }
+
+.color-white   { color:            $color-white; }
+.bg-white      { background-color: $color-white; }
+.border-color-white  { border-color:     $color-white; }
+.fill-white    { fill:             $color-white; }
+.stroke-white  { stroke:           $color-white; }
+.outline-white { outline-color:    $color-white; }
+
+.color-black   { color:            $color-black; }
+.bg-black      { background-color: $color-black; }
+.border-color-black  { border-color:     $color-black; }
+.fill-black    { fill:             $color-black; }
+.stroke-black  { stroke:           $color-black; }
+.outline-black { outline-color:    $color-black; }
+
+.color-gray-lightest .color-gray-50   { color:            $color-gray-lightest; }
+.bg-gray-lightest .bg-gray-50      { background-color: $color-gray-lightest; }
+.border-color-gray-lightest .border-color-gray-50  { border-color:     $color-gray-lightest; }
+.fill-gray-lightest .fill-gray-50    { fill:             $color-gray-lightest; }
+.stroke-gray-lightest .stroke-gray-50  { stroke:           $color-gray-lightest; }
+.outline-gray-lightest, .outline-gray-50 { outline-color:    $color-gray-lightest; }
+
+.color-gray-200   { color:            $color-gray-200; }
+.bg-gray-200      { background-color: $color-gray-200; }
+.border-color-gray-200  { border-color:     $color-gray-200; }
+.fill-gray-200    { fill:             $color-gray-200; }
+.stroke-gray-200  { stroke:           $color-gray-200; }
+.outline-gray-200 { outline-color:    $color-gray-200; }
+
+.color-gray-light, .color-gray-300   { color:            $color-gray-light; }
+.bg-gray-light, .bg-gray-300      { background-color: $color-gray-light; }
+.border-color-gray-light, .border-color-gray-300  { border-color:     $color-gray-light; }
+.fill-gray-light, .fill-gray-300    { fill:             $color-gray-light; }
+.stroke-gray-light, .stroke-gray-300  { stroke:           $color-gray-light; }
+.outline-gray-light, .outline-gray-300 { outline-color:    $color-gray-light; }
+
+.color-gray-400   { color:            $color-gray-400; }
+.bg-gray-400      { background-color: $color-gray-400; }
+.border-color-gray-400  { border-color:     $color-gray-400; }
+.fill-gray-400    { fill:             $color-gray-400; }
+.stroke-gray-400  { stroke:           $color-gray-400; }
+.outline-gray-400 { outline-color:    $color-gray-400; }
+
+.color-gray, .color-gray-500   { color:            $color-gray; }
+.bg-gray, .bg-gray-500      { background-color: $color-gray; }
+.border-color-gray, .border-color-gray-500  { border-color:     $color-gray; }
+.fill-gray, .fill-gray-500    { fill:             $color-gray; }
+.stroke-gray, .stroke-gray-500  { stroke:           $color-gray; }
+.outline-gray, .outline-gray-500 { outline-color:    $color-gray; }
+
+.color-gray-medium, .color-gray-600   { color:            $color-gray-medium; }
+.bg-gray-medium, .bg-gray-600      { background-color: $color-gray-medium; }
+.border-color-gray-medium, .border-color-gray-600  { border-color:     $color-gray-medium; }
+.fill-gray-medium, .fill-gray-600    { fill:             $color-gray-medium; }
+.stroke-gray-medium, .stroke-gray-600  { stroke:           $color-gray-medium; }
+.outline-gray-medium, .outline-gray-600 { outline-color:    $color-gray-medium; }
+
+.color-gray-dark, .color-gray-700   { color:            $color-gray-dark; }
+.bg-gray-dark, .bg-gray-700      { background-color: $color-gray-dark; }
+.border-color-gray-dark, .border-color-gray-700  { border-color:     $color-gray-dark; }
+.fill-gray-dark, .fill-gray-700    { fill:             $color-gray-dark; }
+.stroke-gray-dark, .stroke-gray-700  { stroke:           $color-gray-dark; }
+.outline-gray-dark, .outline-gray-700 { outline-color:    $color-gray-dark; }
+
+.color-gray-darkest, .color-gray-900   { color:            $color-gray-darkest; }
+.bg-gray-darkest, .bg-gray-900      { background-color: $color-gray-darkest; }
+.border-color-gray-darkest, .border-color-gray-900  { border-color:     $color-gray-darkest; }
+.fill-gray-darkest, .fill-gray-900    { fill:             $color-gray-darkest; }
+.stroke-gray-darkest, .stroke-gray-900  { stroke:           $color-gray-darkest; }
+.outline-gray-darkest, .outline-gray-900 { outline-color:    $color-gray-darkest; }
+
+//
+// Other
+
+.color-none   { color:            none; }
+.bg-none      { background-color: none; }
+.border-color-none  { border-color:     none; }
+.fill-none    { fill:             none; }
+.stroke-none  { stroke:           none; }
+.outline-none { outline:          none; }
+
+.color-transparent   { color:            transparent; }
+.bg-transparent      { background-color: transparent; }
+.border-color-transparent  { border-color:     transparent; }
+.outline-transparent { outline-color:    transparent; }
+
+.color-inherit   { color:            inherit; }
+.bg-inherit      { background-color: inherit; }
+.border-color-inherit  { border-color:     inherit; }
+.outline-inherit { outline-color:    inherit; }
+
+.bg-currentcolor      { background-color: currentcolor; }
+.border-color-currentcolor  { border-color:     currentcolor; }
+.fill-currentcolor    { fill:             currentcolor; }
+.stroke-currentcolor  { stroke:           currentcolor; }
+.outline-currentcolor { outline-color:    currentcolor; }

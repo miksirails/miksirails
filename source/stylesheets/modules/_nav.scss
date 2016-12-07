@@ -1,0 +1,13 @@
+.main-nav {
+  width: 100%;
+  background-color: $color-red;
+}
+
+.main-nav__item {
+  padding: 0.25rem 0.5rem;
+  &:hover,
+  &.active {
+    background-color: darken($color-1, 10%);
+    box-shadow: 0 1px 0px $color-white;
+  }
+}

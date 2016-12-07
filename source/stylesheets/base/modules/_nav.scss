@@ -1,0 +1,10 @@
+.main-nav {
+
+}
+
+.main-nav__item {
+  padding: 0.75rem 0.5rem;
+  a:hover {
+    border-bottom: solid 2px $color-white;
+  }
+}

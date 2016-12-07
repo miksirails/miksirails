@@ -1,0 +1,45 @@
+#{$all-text-inputs} {
+  appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+
+  border: 1px solid #9E9E9E;
+  border-radius: 0;
+
+  @extend .size-1;
+
+  background-color: #FFF;
+  &:focus {
+    border-color: #3a88b1;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #E0E0E0;
+    cursor: not-allowed;
+
+    &:hover {
+      border: 1px solid #9E9E9E;
+    }
+  }
+
+  &::placeholder {
+    color: #9E9E9E;
+  }
+}
+#{$all-buttons} {
+  appearance: none;
+  -webkit-appearance: none;
+  &:hover,
+  &:focus {
+  }
+
+  &:disabled {
+
+    &:hover {
+    }
+  }
+}
