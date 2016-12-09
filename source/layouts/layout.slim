@@ -9,6 +9,8 @@ html
     title= current_page.data.title || "Miksi Ruby?"
 
     = stylesheet_link_tag "index.bundle"
+    = javascript_include_tag "https://code.jquery.com/jquery-3.1.1.min.js"
     = javascript_include_tag "index.bundle"
   body class=page_classes
     = yield
+    
