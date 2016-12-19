@@ -1,0 +1,10 @@
+#resources {
+  max-width: 1150px;
+  margin: 0 auto;
+  ul li {
+    margin: 0.5rem 0;
+    &:hover {
+      color: darken($color-1, 20%);
+    }
+  }
+}

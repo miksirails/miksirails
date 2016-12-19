@@ -6,11 +6,12 @@ html
     meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
 
     / Use title if it's in the page YAML frontmatter
-    title= current_page.data.title || "Miksi Ruby?"
+    title= current_page.data.title || "Miksi Rails?"
 
     = stylesheet_link_tag "index.bundle"
     = javascript_include_tag "https://code.jquery.com/jquery-3.1.1.min.js"
     = javascript_include_tag "index.bundle"
   body class=page_classes
+    = partial "/shared/nav"
     = yield
     

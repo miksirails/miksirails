@@ -1,0 +1,33 @@
+.section-welcome {
+  margin: 0;
+  height: 100vh;
+  background-color: $color-1;
+}
+
+.section {
+  width: 100%;
+  .title {
+    max-width: 768px;
+    padding: 0.5rem 0;
+    color: $color-1;
+    border-top: 2px solid $color-1;
+    border-bottom: 2px solid $color-1;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .section-content {
+    max-width: 900px;
+    h1 {
+      width: 100vw;
+    }
+    p{
+      font-family: Garamond,Times New Roman,serif;
+      margin: 0.5rem 0;
+    }
+  }
+  .image-wrapper {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+  }
+}
