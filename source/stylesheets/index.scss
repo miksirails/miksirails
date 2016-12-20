@@ -28,36 +28,3 @@ body {
   background: $color-white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-
-.welcome {
-  max-width: 900px;
-  width: 100%;
-  height: auto;
-  .logo img {
-    max-width: 300px;
-    height: auto;
-  }
-
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
-}
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
