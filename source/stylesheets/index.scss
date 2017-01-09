@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @import "base/reset";
 @import "base/bourbon/bourbon";
 @import "base/neat/neat";
@@ -21,13 +20,14 @@
 //
 // Modules
 @import "modules/button";
-@import "modules/developers";
+@import "modules/content";
+@import "modules/landing-page";
 @import "modules/nav";
-@import "modules/resources";
-@import "modules/sections";
-@import "modules/users";
 
 body {
   background: $color-white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:
+    /* 1 */ -apple-system, BlinkMacSystemFont,
+    /* 2 */ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    /* 3 */ "Helvetica Neue", sans-serif;
 }
