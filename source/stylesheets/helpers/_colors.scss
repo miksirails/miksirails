@@ -37,14 +37,14 @@ $color-gray-darkest: #212121;
 .outline-1 { outline-color:    $color-1; }
 
 .color-2   { color:            $color-2; }
-.bg-2      { background-color: $color-2; }
+.bg-2      { background-color: rgba($color-2, .5); }
 .border-color-2  { border-color:     $color-2; }
 .fill-2    { fill:             $color-2; }
 .stroke-2  { stroke:           $color-2; }
 .outline-2 { outline-color:    $color-2; }
 
 .color-3   { color:            $color-3; }
-.bg-3      { background-color: $color-3; }
+.bg-3      { background-color: rgba($color-3, .3); }
 .border-color-3  { border-color:     $color-3; }
 .fill-3    { fill:             $color-3; }
 .stroke-3  { stroke:           $color-3; }
