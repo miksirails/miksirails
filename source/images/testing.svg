@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="432 300 65.5 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="noun_995930_cc" transform="translate(432.3 296)">
+    <g id="Group_1" data-name="Group 1">
+      <path id="Path_1" data-name="Path 1" class="cls-1" d="M-.3,4V61H65.2V4ZM63.8,5.5v6.2H1.3V5.5ZM1.3,59.5V13.2H63.8V59.5Z"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="1.5" height="1.5" transform="translate(56.9 7.9)"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="1.5" height="1.5" transform="translate(49.3 7.9)"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="1.5" height="1.5" transform="translate(53.1 7.9)"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="38.5" height="1.5" transform="translate(6.1 7.9)"/>
+      <path id="Path_2" data-name="Path 2" class="cls-1" d="M47.6,20.5V19.3h1.3V17.8H44.8v1.5h1.3v1.2A12.923,12.923,0,0,0,46,46.3a8.146,8.146,0,0,1-8.1,7.4H21.8a8.237,8.237,0,0,1-8.2-8.2V41.2a7.75,7.75,0,1,0-1.5,0v4.3a9.709,9.709,0,0,0,9.7,9.7H37.9a9.611,9.611,0,0,0,9.6-8.9A13.021,13.021,0,0,0,59.8,33.4,12.866,12.866,0,0,0,47.6,20.5ZM6.7,33.5a6.318,6.318,0,0,1,6.2-6.3,6.3,6.3,0,1,1,0,12.6A6.19,6.19,0,0,1,6.7,33.5ZM46.8,44.8A11.5,11.5,0,1,1,58.3,33.3,11.5,11.5,0,0,1,46.8,44.8Z"/>
+      <path id="Path_3" data-name="Path 3" class="cls-1" d="M46.8,41.8a8.4,8.4,0,0,1-2.2-16.5l-.4-1.4a9.927,9.927,0,0,0,2.6,19.5,10.679,10.679,0,0,0,2.5-.3L49,41.5A7.8,7.8,0,0,1,46.8,41.8Z"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="1.5" height="1.5" transform="matrix(0.866, -0.5, 0.5, 0.866, 42.548, 27.356)"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-1" width="1.5" height="1.5" transform="matrix(0.5, -0.866, 0.866, 0.5, 40.072, 30.338)"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" width="1.5" height="1.5" transform="translate(39.4 32.6)"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="1.5" height="1.5" transform="matrix(0.5, 0.866, -0.866, 0.5, 41.329, 35.629)"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-1" width="1.5" height="1.5" transform="matrix(-0.866, -0.5, 0.5, -0.866, 43.733, 40.168)"/>
+      <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-1" width="1.5" height="1.5" transform="translate(46 39.3)"/>
+      <path id="Path_4" data-name="Path 4" class="cls-1" d="M46.8,23.5H46v7.8a2.162,2.162,0,0,0-1.5,2.1,2.263,2.263,0,0,0,2.3,2.3h.4l3.7,6.9.7-.4a9.954,9.954,0,0,0-4.8-18.7ZM46,33.4a.8.8,0,1,1,.8.8C46.4,34.1,46,33.8,46,33.4Zm5.5,7-3-5.5a2.035,2.035,0,0,0,.6-1.5,2.162,2.162,0,0,0-1.5-2.1V25a8.4,8.4,0,0,1,3.9,15.4Z"/>
+      <path id="Path_5" data-name="Path 5" class="cls-1" d="M16.7,33.5a3.8,3.8,0,0,0-3.8-3.8,3.714,3.714,0,0,0-3.7,3.8,3.75,3.75,0,1,0,7.5,0Zm-6,0a2.308,2.308,0,0,1,2.2-2.3,2.3,2.3,0,1,1,0,4.6A2.182,2.182,0,0,1,10.7,33.5Z"/>
+    </g>
+  </g>
+</svg>

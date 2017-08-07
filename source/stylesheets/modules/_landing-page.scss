@@ -41,42 +41,134 @@
   }
 }
 
-.section-container {
-  width: 1080px;
-  margin: 0 auto;
 
-}
 
 .bg-rails {
   background-image: url('~/images/raiteet.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 55%;
+  // background-repeat: no-repeat;
 }
 
 .section {
-
-  width: 50%;
-
+  width: 29%;
   min-width: 280px;
-  padding: 1em;
-
+  padding: 0em 2em;
+  align-self: center;
+  margin: 0;
+  color: $color-gray-lightest;
   @include mq(m,l) {
     width: 100%;
   }
   .title {
     max-width: 768px;
     padding: 0.25rem 0;
-    text-align: center;
     margin: 0 auto;
+    font-size: 1em;
   }
   p{
-
-
-      margin: 0.5rem 0.25rem;
+    margin: 1em 0;
+    font-size: 0.8em;
   }
   .image-wrapper {
     max-width: 480px;
     width: 100%;
     text-align: center;
+  }
+}
+
+.section-container {
+  width: 1080px;
+  margin: 0 auto;
+
+}
+
+.first-section{
+  background-color: $color-gray-lightest;
+  .section-1{
+    background-color: white;
+    width: 46%;
+    margin: -3em 1em 1em;
+    @include mq(m,l) {
+      width: 100%;
+    }
+    padding: 1em;
+    box-shadow: 0px 8px 11px -9px rgba(0,0,0,0.75);
+    p{
+      margin: 1em 0;
+      font-size: 0.8em;
+    }
+    .bold{
+      font-size: 1em;
+    }
+    .title{
+      text-align: center;
+    }
+  }
+  .section-2{
+    @extend .section-1;
+  }
+}
+
+.second-section{
+  flex-wrap: nowrap;
+  background-color: $color-gray-900;
+  color: $color-gray-lightest;
+  .illustration{
+    align-self: center;
+    margin-left: 2em;
+  }
+}
+
+.third-section{
+  flex-wrap: nowrap;
+  background-color: $color-1;
+  color: $color-gray-50;
+  h1{
+    color: white;
+  }
+  .illustration{
+    align-self: center;
+    margin-right: 2em;
+  }
+}
+
+.fourth-section{
+  background-color: $color-gray-lightest;
+  .section{
+    color: $color-gray-700;
+  }
+  h1{
+    color: $color-1;
+  }
+  .illustration{
+    align-self: center;
+    margin-right: 2em;
+  }
+}
+
+.fifth-section{
+  background-color: white;
+  .section{
+    color: $color-gray-700;
+  }
+  h1{
+    color: $color-1;
+  }
+}
+
+
+
+.illustration{
+  align-self: center;
+  margin-left: 2em;
+  img{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 1109px) {
+  .section {
+    width: 100%;
   }
 }

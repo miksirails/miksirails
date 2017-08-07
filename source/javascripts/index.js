@@ -67,3 +67,5 @@ $(function() {
     }
   });
 });
+
+$('.first-section').height($('.section-1').outerHeight());
