@@ -29,14 +29,14 @@ title: Miksi Rails?
           p Kansainvälisesti se tuli laajemmin kehittäjien tietoisuuteen vuonna 2000 julkaistun englanninkielisen "Programming Ruby" -opasteoksen myötä.
           p Rubya on luonnollista kirjoittaa ja helppoa lukea. Matsumoton tavoitteena olikin kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia.
   
-  .flex.justify-start.padding-0-75.padding-y.third-section
+  .flex.justify-start.padding-0-75.padding-y.black-section
     .illustration
       = image_tag("testing.svg")
     .flex.wrap.justify-center.section-container
       
       .section
         h1.uppercase.bold.title.color-1 Kehittynyt testauskulttuuri
-        .size-1.child-margins-y-0-25
+        .size-1
           p.bold Rails-yhteistö rakastaa testaamista!
           p  Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat todella edistyksellisiä.
           p Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
@@ -52,7 +52,7 @@ title: Miksi Rails?
           p.bold Kenelle soitat jos tarvitset tukea, eikö valmis tuote olisi parempi kuin avoin lähdekoodi?
           p Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia. Lisäksi sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa.
         
-  .flex.justify-start.padding-0-75.padding-y.fourth-section
+  .flex.justify-start.padding-0-75.padding-y.gray-section
     .flex.wrap.justify-center.section-container
       
       .section
@@ -80,7 +80,7 @@ title: Miksi Rails?
     .illustration
       = image_tag("growth.svg")      
 
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.second-section
+  .flex.justify-start.align-stretch.padding-0-75.padding-y.violet-section
     .illustration
       = image_tag("options.svg") 
     .flex.wrap.justify-center.section-container
@@ -101,7 +101,7 @@ title: Miksi Rails?
           p.bold Kaikki yleiset työkalut integroituna pakettina.
           p Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita.
           
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.fourth-section
+  .flex.justify-start.align-stretch.padding-0-75.padding-y.darkgray-section
     .flex.wrap.justify-center.section-container
       .section
         h1.uppercase.bold.title Sopii kaikkeen käyttöön
@@ -124,11 +124,11 @@ title: Miksi Rails?
           p Vaikka Ruby ei kielenä ole kaikista tehokkain, on se silti yksi miellyttävimmistä käyttää.
           p Kehittäjän aika on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
     .illustration
-      = image_tag("options.svg") 
+      = image_tag("speed.svg") 
 
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.fifth-section
+  .flex.justify-start.align-stretch.padding-0-75.padding-y.white-section
     .illustration
-      = image_tag("options.svg") 
+      = image_tag("medal.svg") 
     .flex.wrap.justify-center.section-container
       
       .section
@@ -143,7 +143,12 @@ title: Miksi Rails?
           p HackerRank-sivuston teettämän tutkimuksen mukaan parhaat Ruby-osaajat ovat Suomessa
       .section
         .size-1.child-margins-y-0-25
-          = image_tag "top-it-skill-by-country.jpg", class: "image-wrapper margin-auto-x"
+          = image_tag "top-it-skill-by-country.jpg", class: "image-wrapper"
           p.size-0-75
             |Lähde:
             =link_to "HackerRank", "http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/"
+  
+  footer
+    .logo-footer
+      = image_tag("rails-logo.svg")
+    p Try Ruby on Rails today
