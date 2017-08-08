@@ -103,6 +103,7 @@
     background-repeat: no-repeat;
     background-position-x: -8em;
     background-position-y: 5em;
+    border-radius: 5px;
     width: 46%;
     margin: -3em 1em 1em;
     padding: 1em;
@@ -118,9 +119,22 @@
     .bold{
       font-size: 1em;
     }
-    .title{
-      text-align: center;
+    .title {
+      max-width: 768px;
+      padding: 0.25rem 0;
+      margin: 0 0 1em;
+      font-size: 1em;
+      position: relative;
     }
+    .title:before {
+      content : "";
+      position: absolute;
+      left    : 0;
+      bottom  : -0.3em;
+      height  : 1px;
+      width   : 3em;  /* or 100px */
+      border-bottom: 3px solid;
+  }
   }
   .section-2{
     @extend .section-1;
@@ -139,6 +153,9 @@
   flex-wrap: nowrap;
   background-color: #3F474F;
   color: $color-gray-lightest;
+  .section{
+    background-color: #454e56;
+  }
   .illustration{
     align-self: center;
     margin-right: 2em;
@@ -150,6 +167,9 @@
   flex-wrap: nowrap;
   background-color: #5E2C5C;
   color: $color-gray-50;
+  .section{
+    background-color: #673165;
+  }
   h1{
     color: white;
   }
@@ -164,9 +184,10 @@
   background-color: $color-gray-lightest;
   .section{
     color: $color-gray-700;
+    background-color: white;
   }
   h1{
-    color: $color-1;
+    color: #3f474f;
   }
   .illustration{
     align-self: center;
@@ -176,9 +197,10 @@
 
 .white-section{
   padding: 2em 1em;
-  background-color: white;
+  background-color: $color-gray-lightest;
   .section{
     color: $color-gray-700;
+    background-color: white;
   }
   h1{
     color: $color-1;
@@ -192,8 +214,11 @@
 .darkgray-section{
   @extend .gray-section;
   background-color: $color-gray-200;
+  .section{
+    background-color: $color-gray-50;
+  }
   h1{
-    color: $color-gray-darkest;
+    color: #673165;
   }
 }
 
