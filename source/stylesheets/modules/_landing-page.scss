@@ -90,7 +90,7 @@
 }
 
 .section-container {
-  width: 1080px;
+  // width: 1080px;
   margin: 0 auto;
 
 }
@@ -98,13 +98,13 @@
 .first-section{
   background-color: $color-gray-lightest;
   .section-1{
-    background-color: #5E2C5C;
+    background-color: #6f356d;
     background-image: url("/images/icon-rubyonrails.png");
     background-repeat: no-repeat;
     background-position-x: -8em;
     background-position-y: 5em;
     border-radius: 5px;
-    width: 46%;
+    width: 30%;
     margin: -3em 1em 1em;
     padding: 1em;
     box-shadow: 0px 8px 11px -9px rgba(0,0,0,0.75);
@@ -114,7 +114,7 @@
       font-size: 0.8em;
     }
     h1{
-      color: $color-1;
+      color: white;
     }
     .bold{
       font-size: 1em;
@@ -123,7 +123,7 @@
       max-width: 768px;
       padding: 0.25rem 0;
       margin: 0 0 1em;
-      font-size: 1em;
+      font-size: 1.5em;
       position: relative;
     }
     .title:before {
@@ -148,27 +148,27 @@
 
 }
 
-.black-section{
-  padding: 2em 1em;
-  flex-wrap: nowrap;
-  background-color: #3F474F;
-  color: $color-gray-lightest;
-  .section{
-    background-color: #454e56;
-  }
-  .illustration{
-    align-self: center;
-    margin-right: 2em;
-  }
-}
+// .black-section{
+//   padding: 2em 1em;
+//   flex-wrap: nowrap;
+//   background-color: #3F474F;
+//   color: $color-gray-lightest;
+//   .section{
+//     background-color: #454e56;
+//   }
+//   .illustration{
+//     align-self: center;
+//     margin-right: 2em;
+//   }
+// }
 
 .violet-section{
   padding: 2em 1em;
   flex-wrap: nowrap;
-  background-color: #5E2C5C;
+  background-color: #6f356d;
   color: $color-gray-50;
   .section{
-    background-color: #673165;
+    background-color: #773c75;
   }
   h1{
     color: white;
