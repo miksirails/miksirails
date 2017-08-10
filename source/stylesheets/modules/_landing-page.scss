@@ -251,8 +251,8 @@ footer{
   .section {
     width: 100%;
   }
-  .section-1{
-    width: auto !important;
+  .first-section .section-1{
+    width: 80%;
     margin: 1em;
   }
 }
@@ -267,8 +267,8 @@ footer{
   .section-container{
     width: auto;
   }
-  .section-1{
-    width: auto !important;
+  .first-section .section-1{
+    width: auto;
     margin: 1em;
   }
 
