@@ -2,11 +2,12 @@
   margin: 0;
   height: 80vh;
   background: #cc0000;
-  background: -moz-linear-gradient(top,  #cc0000 0%, #b20000 100%);
-  background: -webkit-linear-gradient(top,  #cc0000 0%,#b20000 100%);
-  background: linear-gradient(to bottom,  #cc0000 0%,#b20000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#b20000',GradientType=0 );
+  background: -moz-linear-gradient(top, #cc0000 0%, #b20000 100%);
+  background: -webkit-linear-gradient(top, #cc0000 0%,#b20000 100%);
+  background: linear-gradient(to bottom, #cc0000 0%,#b20000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#cc0000', endColorstr='#b20000',GradientType=0 );
   z-index: 1;
+
   .welcome {
     max-width: 900px;
     width: 100%;
@@ -16,33 +17,31 @@
       max-width: 300px;
       height: auto;
     }
-
     -webkit-animation-name: welcome;
-    -webkit-animation-duration: .9s;
+    -webkit-animation-duration: 0.9s;
   }
-
   @-webkit-keyframes welcome {
     from {
       -webkit-transform: scale(0);
       opacity: 0;
     }
+
     50% {
-     -webkit-transform: scale(0);
-     opacity: 0;
+      -webkit-transform: scale(0);
+      opacity: 0;
     }
+
     82.5% {
       -webkit-transform: scale(1.03);
       -webkit-animation-timing-function: ease-out;
       opacity: 1;
     }
+
     to {
       -webkit-transform: scale(1);
     }
   }
 }
-
-
-
 // .bg-rails {
 //   background-image: url('~/images/raiteet-dark.svg');
 //   background-size: 55%;
@@ -50,17 +49,18 @@
 //   // background-repeat: no-repeat;
 // }
 
-.section {
+.card {
   width: 29%;
   min-width: 280px;
-  padding: 1em 1em;
+  padding: 1em;
   align-self: center;
   margin: 1em;
   color: $color-gray-lightest;
-  box-shadow: 0px 3px 22px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 22px -9px rgba(0, 0, 0, 0.75);
   @include mq(m,l) {
     width: 100%;
   }
+
   .title {
     max-width: 768px;
     padding: 0.25rem 0;
@@ -68,19 +68,23 @@
     font-size: 1em;
     position: relative;
   }
+
   .title:before {
-    content : "";
+    content: "";
     position: absolute;
-    left    : 0;
-    bottom  : -0.3em;
-    height  : 1px;
-    width   : 3em;  /* or 100px */
+    left: 0;
+    bottom: -0.3em;
+    height: 1px;
+    width: 3em;
+    /* or 100px */
     border-bottom: 3px solid;
-}
-  p{
+  }
+
+  p {
     margin: 0;
     font-size: 0.8em;
   }
+
   .image-wrapper {
     max-width: 300px;
     width: 100%;
@@ -92,13 +96,13 @@
 .section-container {
   // width: 1080px;
   margin: 0 auto;
-
 }
 
-.first-section{
+.first-section {
   background-color: $color-gray-lightest;
-  .section-1{
-    background-color: #6f356d;
+
+  .card-main-1 {
+    background-color: $color-purple;
     background-image: url("/images/icon-rubyonrails.png");
     background-repeat: no-repeat;
     background-position-x: -8em;
@@ -107,18 +111,22 @@
     width: 30%;
     margin: -3em 1em 1em;
     padding: 1em;
-    box-shadow: 0px 8px 11px -9px rgba(0,0,0,0.75);
-    p{
+    box-shadow: 0 8px 11px -9px rgba(0,0,0,0.75);
+
+    p {
       color: $color-gray-50;
       margin: 1em 0;
       font-size: 0.8em;
     }
-    h1{
+
+    h1 {
       color: white;
     }
-    .bold{
+
+    .bold {
       font-size: 1em;
     }
+
     .title {
       max-width: 768px;
       padding: 0.25rem 0;
@@ -126,28 +134,28 @@
       font-size: 1.5em;
       position: relative;
     }
-    .title:before {
-      content : "";
-      position: absolute;
-      left    : 0;
-      bottom  : -0.3em;
-      height  : 1px;
-      width   : 3em;  /* or 100px */
-      border-bottom: 3px solid;
-  }
-  }
-  .section-2{
-    @extend .section-1;
 
+    .title:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.3em;
+      height: 1px;
+      width: 3em;
+      /* or 100px */
+      border-bottom: 3px solid;
+    }
+  }
+
+  .card-main-2 {
+    @extend .card-main-1;
     background-image: url("/images/ruby-logo-transparent.png");
     background-repeat: no-repeat;
     background-size: 16em;
     background-position-x: 14em;
     background-position-y: -3em;
   }
-
 }
-
 // .black-section{
 //   padding: 2em 1em;
 //   flex-wrap: nowrap;
@@ -162,114 +170,99 @@
 //   }
 // }
 
-.violet-section{
+.purple-section {
   padding: 2em 1em;
   flex-wrap: nowrap;
-  background-color: #6f356d;
+  background-color: $color-purple;
   color: $color-gray-50;
-  .section{
-    background-color: #773c75;
+
+  .card {
+    background-color: lighten($color-purple, 5%);
   }
-  h1{
+
+  h1 {
     color: white;
   }
-  .illustration{
+
+  .illustration {
     align-self: center;
     margin-right: 2em;
   }
 }
 
-.gray-section{
+.gray-section {
   padding: 2em 1em;
   background-color: $color-gray-lightest;
-  .section{
+
+  .card {
     color: $color-gray-700;
     background-color: white;
   }
-  h1{
-    color: #3f474f;
+
+  h1 {
+    color: $color-dark-gray-blue;
   }
-  .illustration{
+
+  .illustration {
     align-self: center;
     margin-right: 2em;
   }
 }
 
-.white-section{
+.white-section {
   padding: 2em 1em;
   background-color: $color-gray-lightest;
-  .section{
+
+  .card {
     color: $color-gray-700;
     background-color: white;
   }
-  h1{
-    color: $color-1;
+
+  h1 {
+    color: $color-red;
   }
-  .illustration{
+
+  .illustration {
     align-self: center;
     margin-right: 2em;
   }
 }
 
-.darkgray-section{
+.darkgray-section {
   @extend .gray-section;
   background-color: $color-gray-200;
-  .section{
+
+  .card {
     background-color: $color-gray-50;
   }
-  h1{
+
+  h1 {
     color: #673165;
   }
 }
 
-
-.illustration{
+.illustration {
   align-self: center;
   margin-left: 2em;
-  img{
+
+  img {
     width: 180px;
     height: 180px;
   }
 }
 
-footer{
-  background-color: $color-1;
+footer {
+  background-color: $color-red;
   text-align: center;
   color: $color-gray-50;
   padding: 1em 1em 2em;
 }
 
-.logo-footer{
+.logo-footer {
   width: 100px;
   margin: 0 auto;
-  img{
+
+  img {
     padding-top: 1em;
   }
-}
-
-@media screen and (max-width: 1267px) {
-  .section {
-    width: 100%;
-  }
-  .first-section .section-1{
-    width: 80%;
-    margin: 1em;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .section {
-    width: 100%;
-  }
-  .flex{
-    flex-direction: column;
-  }
-  .section-container{
-    width: auto;
-  }
-  .first-section .section-1{
-    width: auto;
-    margin: 1em;
-  }
-
 }
