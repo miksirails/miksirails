@@ -69,3 +69,12 @@ $(function() {
 });
 
 $('.first-section').height($('.section-1').outerHeight());
+
+
+// Cards
+$( document ).ready(function(){
+  $('.card').on('click', function(){
+    $(this).find('.card-content').slideToggle();
+  });
+
+});

@@ -1,153 +1,175 @@
 ---
 title: Miksi Rails?
 ---
-
-.section-welcome.flex.justify-center.vertical.wrap.align-center.margin-1.margin-top.padding-1
-  .welcome
-    .logo.margin-0-5.margin-y
-      = image_tag("rails-logo.svg", class:"margin-auto-x")
-    h1.color-white.size-1-25.bold.text-align-center.margin-1.margin-y Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails kehitystä tekevää yritystä. 
-    / <br/><br/>Syy tai seuraus: Yli 80% Railsia käyttävistä suomalaisista yrityksistä tekee voittoa.
-    p.text-align-center
-      = link_to "Lue lisää", "#more", class:"color-white"
+  
+.header
+  .overlay
+    ul.nav
+      li Mikä on Rails
+      li Miksi Rails
+      li Kuka
+      li Lisää
+    .section-welcome
+      .welcome
+        .logo.margin-0-5.margin-y
+          = image_tag("rails-logo.svg", class:"margin-auto-x")
+        h1.color-white.size-1-25.bold.text-align-center.margin-1.margin-y Suomessa on tällä hetkellä ainakin 89 Rails-teknologiaa hyödyntävää ja kymmeniä Rails-kehitystä tarjoavaa yritystä.
+        / <br/><br/>Syy tai seuraus: Yli 80% Railsia käyttävistä suomalaisista yrityksistä tekee voittoa.
+        p.text-align-center
+          = link_to "Lue lisää", "#more", class:"color-white"
 
 
 #more
-  .flex.wrap.justify-start.align-stretch.color-gray-dark.padding-0-75.padding-y.first-section.bg-rails
-    .flex.wrap.justify-center.section-container
+  .first-section
+    .flex-container
       .card-main-1
-        h1.uppercase.bold.title Mikä ihmeen Ruby on Rails?
-        .size-1.child--0-25
-          p.bold Ruby on Rails on avoimeen lähdekoodiin perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
-          p Rails erottuu lähinnä tarvittavan ohjelmakoodin pienestä määrästä ja konfigurointitarpeen puutteesta.
-          p Esimerkiksi sähköpostiviestin lähettäminen käyttäjälle on yleinen tehtävä, joten se luontevasti onnistuu Railsilla yhdellä koodirivillä
+        h1.uppercase.title Mikä ihmeen Rails? 
+        p.bold Ruby on Rails, tutummin Rails, on avoimeen lähdekoodiin ja Ruby -ohjelmointikieleen perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
+        p HISTORIA
+        p HISTORIA
       .card-main-2
-        h1.uppercase.bold.title Ruby
-        .size-1.child-margins-y-0-25
-          p.bold Ruby on dynaaminen avoimen lähdekoodin ohjelmointikieli joka keskittyy yksinkertaisuuteen ja tuottavuuteen.
-          p Sen on alkujaan kehittänyt japanilainen Yukihiro "Matz" Matsumoto ja se on ollut käytössä vuodesta 1995 lähtien.
-          p Kansainvälisesti se tuli laajemmin kehittäjien tietoisuuteen vuonna 2000 julkaistun englanninkielisen "Programming Ruby" -opasteoksen myötä.
-          p Rubya on luonnollista kirjoittaa ja helppoa lukea. Matsumoton tavoitteena olikin kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia.
+        h1.uppercase.title Mikä Ruby?
+        p.bold Ruby on dynaaminen avoimen lähdekoodin ohjelmointikieli joka keskittyy yksinkertaisuuteen ja tuottavuuteen.
+        p Rubyn alkujaan kehittänyt japanilainen Yukihiro "Matz" Matsumoto julkaisi sen vuonna 1995. Matsumoton tavoitteena oli kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia. Kansainvälisesti Ruby tuli kehittäjien tietoisuuteen laajemmin vuonna 2000 julkaistun "Programming Ruby" -opasteoksen myötä.
+  .second-section
+    .section-container
+      .empty-section
+      .flex-cards
+        .card
+          .card-title
+            h2 PARHAAT RUBY-KEHITTÄJÄT LÖYTYVÄT SUOMESTA
+          .card-icon
+          .card-content.display-none
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          
+        .card
+          .card-title
+            h2 PARHAAT RUBY-KEHITTÄJÄT LÖYTYVÄT SUOMESTA
+            i
+          .card-content.display-none
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .card-icon
+          
   
-  .flex.justify-start.padding-0-75.padding-y.darkgray-section
-    .illustration
-      = image_tag("testing.svg")
-    .flex.wrap.justify-center.section-container
-      
-      .card
-        h1.uppercase.bold.title.color-1 Kehittynyt testauskulttuuri
-        .size-1
-          p.bold Rails-yhteistö rakastaa testaamista!
-          p  Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat todella edistyksellisiä.
-          p Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
-  
-      .card    
-        h1.uppercase.bold.title.color-1 Ruby on Rails ❤️ webbiä
-        .size-1.child-margins-y-0-25
-          p Kehittäjät, jotka ovat kokeneita Ruby on Rails -ohjelmistokehyksen käytössä, ovat useimmiten myös hyvin perillä modernien verkkosovellusten kehittämisestä ja niiden käyttämistä teknologioista. Rails-kehittäjä tiimissä takaa siis ajan tasalla olevan tuloksen!
-          
-      .card    
-        h1.uppercase.bold.title.color-1 Entäs tuki?
-        .size-1.child-margins-y-0-25
-          p.bold Kenelle soitat jos tarvitset tukea, eikö valmis tuote olisi parempi kuin avoin lähdekoodi?
-          p Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia. Lisäksi sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa.
-        
-  .flex.justify-start.padding-0-75.padding-y.gray-section
-    .flex.wrap.justify-center.section-container
-      
-      .card
-        h1.uppercase.bold.title.color-1 Yli 10 vuotta
-        .size-1.child-margins-y-0-25
-          p.bold Rails on ollut olemassa ja sitä on kehitetty jo yli 10 vuotta. Teknologian maailmassa tämä on pitkä aika.
-          p Kyse ei siis ole teknologiasta joka olisi menossa pois ja katoamassa. Vaikka 2017 web-teknologioissa on myös valinnanvaraa, silti Ruby on Rails on edelleen korkealla suosituimpien joukossa.
-    
-      .card    
-        h1.uppercase.bold.title.color-1 89 vaihtoehtoa
-        .size-1.child-margins-y-0-25
-          p.bold Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails-kehitystä tekevää yritystä.
-          p Syy tai seuraus: Yli 80% Railsia käyttävistä suomalaisista yrityksistä tekee voittoa.
-          p.size-0-75 
-            | Lähde: 
-            =link_to "Vainu", "https://search.vainu.io/?q=technology_ruby_on_rails"    
-            
-      .card
-        h1.uppercase.bold.title.color-1 Hyvässä seurassa
-        .size-1.child-margins-y-0-25
-          p.bold Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.
-          p Railsia käyttävät mm.
-          p.italic Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM, NASA
-          
-    .illustration
-      = image_tag("growth.svg")      
-
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.purple-section
-    .illustration
-      = image_tag("options.svg") 
-    .flex.wrap.justify-center.section-container
-    
-      .card
-        h1.uppercase.bold.title Hyvä ekosysteemi
-        .size-1.child-margins-y-0-25
-          p Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
-      
-      .card
-        h1.uppercase.bold.title RubyGems
-        .size-1.child-margins-y-0-25
-          p RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen.
-
-      .card
-        h1.uppercase.bold.title Tehokas
-        .size-1.child-margins-y-0-25
-          p.bold Kaikki yleiset työkalut integroituna pakettina.
-          p Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita.
-          
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.darkgray-section
-    .flex.wrap.justify-center.section-container
-      .card
-        h1.uppercase.bold.title Sopii kaikkeen käyttöön
-        .size-1.child-margins-y-0-25
-          p.bold Tarjoaa perusjutut, mutta ei tarvitse puukottaa pois asioita joita ei sovi. 
-          p Täydellinen kultainen keskitie olemassaolevan käyttämisen ja nollasta rakentamisen välillä.
-          
-      .card
-        h1.uppercase.bold.title Kehittäjäyhteisö
-        .size-1.child-margins-y-0-25
-          p Railsin kehitykseen on osallistunut yli <b>4500</b> kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin.
-          p.size-0-75
-            |Lähde: 
-            =link_to "Rails Contributors - All time", "http://contributors.rubyonrails.org/"
-            
-      .card    
-        h1.uppercase.bold.title Onnellisemmat kehittäjät
-        .size-1.child-margins-y-0-25
-          p.bold Ruby-ohjelmointikielen peruskulmakiviä ovat ohjelmoijan onnellisuus sekä tehokkuus. 
-          p Vaikka Ruby ei kielenä ole kaikista tehokkain, on se silti yksi miellyttävimmistä käyttää.
-          p Kehittäjän aika on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
-    .illustration
-      = image_tag("speed.svg") 
-
-  .flex.justify-start.align-stretch.padding-0-75.padding-y.white-section
-    .illustration
-      = image_tag("medal.svg") 
-    .flex.wrap.justify-center.section-container
-      
-      .card
-        h1.uppercase.bold.title Paljon materiaalia aloittelijoille
-        .size-1.child-margins-y-0-25
-          p Verkossa on laajat kokoelmat opetusvideoita, aktiivisia blogeja sekä ammattimaisesti tuotettuja online-kursseja Rubyn ja Railsin opiskeluun.
-          p Rubyn ja Railsin ympärille muodostunut kansainvälinen yhteisö on aina valmis ottamaan sinut avosylin vastaan kun haluat oppia.
-      
-      .card
-        h1.uppercase.bold.title Parhaat Ruby-kehittäjät löytyvät Suomesta
-        .size-1.child-margins-y-0-25
-          p HackerRank-sivuston teettämän tutkimuksen mukaan parhaat Ruby-osaajat ovat Suomessa
-      .card
-        .size-1.child-margins-y-0-25
-          = image_tag "top-it-skill-by-country.jpg", class: "image-wrapper"
-          p.size-0-75
-            |Lähde:
-            =link_to "HackerRank", "http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/"
-  
+  / .flex.justify-start.padding-0-75.padding-y.darkgray-section
+  /   .illustration
+  /     = image_tag("testing.svg")
+  /   .flex.wrap.justify-center.section-container
+  /     
+  /     .card
+  /       h1.uppercase.bold.title.color-1 Kehittynyt testauskulttuuri
+  /       .size-1
+  /         p.bold Rails-yhteistö rakastaa testaamista!
+  /         p  Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat todella edistyksellisiä.
+  /         p Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
+  / 
+  /     .card    
+  /       h1.uppercase.bold.title.color-1 Ruby on Rails ❤️ webbiä
+  /       .size-1.child-margins-y-0-25
+  /         p Kehittäjät, jotka ovat kokeneita Ruby on Rails -ohjelmistokehyksen käytössä, ovat useimmiten myös hyvin perillä modernien verkkosovellusten kehittämisestä ja niiden käyttämistä teknologioista. Rails-kehittäjä tiimissä takaa siis ajan tasalla olevan tuloksen!
+  /         
+  /     .card    
+  /       h1.uppercase.bold.title.color-1 Entäs tuki?
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Kenelle soitat jos tarvitset tukea, eikö valmis tuote olisi parempi kuin avoin lähdekoodi?
+  /         p Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia. Lisäksi sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa.
+  /       
+  / .flex.justify-start.padding-0-75.padding-y.gray-section
+  /   .flex.wrap.justify-center.section-container
+  /     
+  /     .card
+  /       h1.uppercase.bold.title.color-1 Yli 10 vuotta
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Rails on ollut olemassa ja sitä on kehitetty jo yli 10 vuotta. Teknologian maailmassa tämä on pitkä aika.
+  /         p Kyse ei siis ole teknologiasta joka olisi menossa pois ja katoamassa. Vaikka 2017 web-teknologioissa on myös valinnanvaraa, silti Ruby on Rails on edelleen korkealla suosituimpien joukossa.
+  /   
+  /     .card    
+  /       h1.uppercase.bold.title.color-1 89 vaihtoehtoa
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails-kehitystä tekevää yritystä.
+  /         p Syy tai seuraus: Yli 80% Railsia käyttävistä suomalaisista yrityksistä tekee voittoa.
+  /         p.size-0-75 
+  /           | Lähde: 
+  /           =link_to "Vainu", "https://search.vainu.io/?q=technology_ruby_on_rails"    
+  /           
+  /     .card
+  /       h1.uppercase.bold.title.color-1 Hyvässä seurassa
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.
+  /         p Railsia käyttävät mm.
+  /         p.italic Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM, NASA
+  /         
+  /   .illustration
+  /     = image_tag("growth.svg")      
+  / 
+  / .flex.justify-start.align-stretch.padding-0-75.padding-y.purple-section
+  /   .illustration
+  /     = image_tag("options.svg") 
+  /   .flex.wrap.justify-center.section-container
+  /   
+  /     .card
+  /       h1.uppercase.bold.title Hyvä ekosysteemi
+  /       .size-1.child-margins-y-0-25
+  /         p Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
+  /     
+  /     .card
+  /       h1.uppercase.bold.title RubyGems
+  /       .size-1.child-margins-y-0-25
+  /         p RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen.
+  / 
+  /     .card
+  /       h1.uppercase.bold.title Tehokas
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Kaikki yleiset työkalut integroituna pakettina.
+  /         p Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita.
+  /         
+  / .flex.justify-start.align-stretch.padding-0-75.padding-y.darkgray-section
+  /   .flex.wrap.justify-center.section-container
+  /     .card
+  /       h1.uppercase.bold.title Sopii kaikkeen käyttöön
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Tarjoaa perusjutut, mutta ei tarvitse puukottaa pois asioita joita ei sovi. 
+  /         p Täydellinen kultainen keskitie olemassaolevan käyttämisen ja nollasta rakentamisen välillä.
+  /         
+  /     .card
+  /       h1.uppercase.bold.title Kehittäjäyhteisö
+  /       .size-1.child-margins-y-0-25
+  /         p Railsin kehitykseen on osallistunut yli <b>4500</b> kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin.
+  /         p.size-0-75
+  /           |Lähde: 
+  /           =link_to "Rails Contributors - All time", "http://contributors.rubyonrails.org/"
+  /           
+  /     .card    
+  /       h1.uppercase.bold.title Onnellisemmat kehittäjät
+  /       .size-1.child-margins-y-0-25
+  /         p.bold Ruby-ohjelmointikielen peruskulmakiviä ovat ohjelmoijan onnellisuus sekä tehokkuus. 
+  /         p Vaikka Ruby ei kielenä ole kaikista tehokkain, on se silti yksi miellyttävimmistä käyttää.
+  /         p Kehittäjän aika on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
+  /   .illustration
+  /     = image_tag("speed.svg") 
+  / 
+  / .flex.justify-start.align-stretch.padding-0-75.padding-y.white-section
+  /   .illustration
+  /     = image_tag("medal.svg") 
+  /   .flex.wrap.justify-center.section-container
+  /     
+  /     .card
+  /       h1.uppercase.bold.title Paljon materiaalia aloittelijoille
+  /       .size-1.child-margins-y-0-25
+  /         p Verkossa on laajat kokoelmat opetusvideoita, aktiivisia blogeja sekä ammattimaisesti tuotettuja online-kursseja Rubyn ja Railsin opiskeluun.
+  /         p Rubyn ja Railsin ympärille muodostunut kansainvälinen yhteisö on aina valmis ottamaan sinut avosylin vastaan kun haluat oppia.
+  /     
+  /     .card
+  /       h1.uppercase.bold.title Parhaat Ruby-kehittäjät löytyvät Suomesta
+  /       .size-1.child-margins-y-0-25
+  /         p HackerRank-sivuston teettämän tutkimuksen mukaan parhaat Ruby-osaajat ovat Suomessa
+  /     .card
+  /       .size-1.child-margins-y-0-25
+  /         = image_tag "top-it-skill-by-country.jpg", class: "image-wrapper"
+  /         p.size-0-75
+  /           |Lähde:
+  /           =link_to "HackerRank", "http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/"
+  / 
   footer
     .logo-footer
       = image_tag("rails-logo.svg")

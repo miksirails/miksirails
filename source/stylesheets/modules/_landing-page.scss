@@ -1,13 +1,31 @@
-.section-welcome {
+.header{
   margin: 0;
   height: 80vh;
-  background: #cc0000;
-  background: -moz-linear-gradient(top, #cc0000 0%, #b20000 100%);
-  background: -webkit-linear-gradient(top, #cc0000 0%,#b20000 100%);
-  background: linear-gradient(to bottom, #cc0000 0%,#b20000 100%);
+  background: url(/images/header-img.jpg);
+  background-size: cover;
+  position: relative;
+  // background: #cc0000;
+  // background: -moz-linear-gradient(top, #cc0000 0%, #b20000 100%);
+  // background: -webkit-linear-gradient(top, #cc0000 0%,#b20000 100%);
+  // background: linear-gradient(to bottom, #cc0000 0%,#b20000 100%);
+
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr= '#cc0000', endColorstr='#b20000',GradientType=0 );
   z-index: 1;
 
+  .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(204, 0, 0, 0.7);
+  }
+
+  .section-welcome{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .welcome {
     max-width: 900px;
     width: 100%;
@@ -49,92 +67,91 @@
 //   // background-repeat: no-repeat;
 // }
 
-.card {
-  width: 29%;
-  min-width: 280px;
-  padding: 1em;
-  align-self: center;
-  margin: 1em;
-  color: $color-gray-lightest;
-  box-shadow: 0 3px 22px -9px rgba(0, 0, 0, 0.75);
-  @include mq(m,l) {
-    width: 100%;
-  }
-
-  .title {
-    max-width: 768px;
-    padding: 0.25rem 0;
-    margin: 0 0 1em;
-    font-size: 1em;
-    position: relative;
-  }
-
-  .title:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.3em;
-    height: 1px;
-    width: 3em;
-    /* or 100px */
-    border-bottom: 3px solid;
-  }
-
-  p {
-    margin: 0;
-    font-size: 0.8em;
-  }
-
-  .image-wrapper {
-    max-width: 300px;
-    width: 100%;
-    text-align: center;
-    margin: 1em 0;
-  }
-}
+// .card {
+//   width: 29%;
+//   min-width: 280px;
+//   padding: 1em;
+//   align-self: center;
+//   margin: 1em;
+//   color: $color-gray-lightest;
+//   box-shadow: 0 3px 22px -9px rgba(0, 0, 0, 0.75);
+//   @include mq(m,l) {
+//     width: 100%;
+//   }
+//
+//   .title {
+//     max-width: 768px;
+//     padding: 0.25rem 0;
+//     margin: 0 0 1em;
+//     font-size: 1em;
+//     position: relative;
+//   }
+//
+//   .title:before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: -0.3em;
+//     height: 1px;
+//     width: 3em;
+//     /* or 100px */
+//     border-bottom: 3px solid;
+//   }
+//
+//   p {
+//     margin: 0;
+//     font-size: 0.8em;
+//   }
+//
+//   .image-wrapper {
+//     max-width: 300px;
+//     width: 100%;
+//     text-align: center;
+//     margin: 1em 0;
+//   }
+// }
 
 .section-container {
-  // width: 1080px;
+  max-width: 1080px;
   margin: 0 auto;
+}
+.flex-container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .first-section {
   background-color: $color-gray-lightest;
+  margin-top: -3rem;
+  padding: 0 1rem;
+
 
   .card-main-1 {
-    background-color: $color-purple;
+    background-color: $lighter-gray;
     background-image: url("/images/icon-rubyonrails.png");
     background-repeat: no-repeat;
-    background-position-x: -8em;
-    background-position-y: 5em;
-    border-radius: 5px;
-    width: 30%;
-    margin: -3em 1em 1em;
-    padding: 1em;
-    box-shadow: 0 8px 11px -9px rgba(0,0,0,0.75);
-
-    p {
-      color: $color-gray-50;
-      margin: 1em 0;
-      font-size: 0.8em;
-    }
-
-    h1 {
-      color: white;
-    }
-
-    .bold {
-      font-size: 1em;
-    }
+    background-position-x: 4em;
+    background-position-y: 9em;
+    border-radius: 1px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 1rem;
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,0.45);
+    z-index: 1;
 
     .title {
+      color: $dark-gray;
+      font-weight: bold;
       max-width: 768px;
-      padding: 0.25rem 0;
-      margin: 0 0 1em;
-      font-size: 1.5em;
+      @include font(1-25);
       position: relative;
+      margin-bottom: 0.75rem;
     }
-
     .title:before {
       content: "";
       position: absolute;
@@ -145,6 +162,17 @@
       /* or 100px */
       border-bottom: 3px solid;
     }
+
+    p {
+      color: $dark-gray;
+      @include font(1);
+      padding-bottom: 0.25rem;
+    }
+    .bold{
+      padding-bottom: 0.5rem;
+    }
+
+
   }
 
   .card-main-2 {
@@ -156,99 +184,56 @@
     background-position-y: -3em;
   }
 }
-// .black-section{
-//   padding: 2em 1em;
-//   flex-wrap: nowrap;
-//   background-color: #3F474F;
-//   color: $color-gray-lightest;
-//   .section{
-//     background-color: #454e56;
-//   }
-//   .illustration{
-//     align-self: center;
-//     margin-right: 2em;
-//   }
-// }
 
-.purple-section {
-  padding: 2em 1em;
-  flex-wrap: nowrap;
-  background-color: $color-purple;
-  color: $color-gray-50;
-
-  .card {
-    background-color: lighten($color-purple, 5%);
-  }
-
-  h1 {
-    color: white;
-  }
-
-  .illustration {
-    align-self: center;
-    margin-right: 2em;
-  }
+.second-section{
+  background: $light-gray;
+  color: $blue;
+  margin-top: -3rem;
 }
 
-.gray-section {
-  padding: 2em 1em;
-  background-color: $color-gray-lightest;
-
-  .card {
-    color: $color-gray-700;
-    background-color: white;
-  }
-
-  h1 {
-    color: $color-dark-gray-blue;
-  }
-
-  .illustration {
-    align-self: center;
-    margin-right: 2em;
-  }
+.flex-cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  flex-basis: 40%;
+  margin: 1rem;
+  // flex-grow: 1;
 }
 
-.white-section {
-  padding: 2em 1em;
-  background-color: $color-gray-lightest;
-
-  .card {
-    color: $color-gray-700;
-    background-color: white;
+.card-title{
+  @include font(1);
+  h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.75rem;
   }
-
-  h1 {
-    color: $color-red;
+  h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.3em;
+    height: 1px;
+    width: 3em;
+    /* or 100px */
+    border-bottom: 3px solid;
   }
+  h2:after {
+    content: '\f0dd';
+    font-family: FontAwesome;
+    position: relative;
+    padding: 1rem;
+    top: -0.2em;
 
-  .illustration {
-    align-self: center;
-    margin-right: 2em;
-  }
-}
-
-.darkgray-section {
-  @extend .gray-section;
-  background-color: $color-gray-200;
-
-  .card {
-    background-color: $color-gray-50;
-  }
-
-  h1 {
-    color: #673165;
   }
 }
+.card-content{
+  @include font(0-75);
+}
 
-.illustration {
-  align-self: center;
-  margin-left: 2em;
-
-  img {
-    width: 180px;
-    height: 180px;
-  }
+.empty-section{
+  height: 3rem;
 }
 
 footer {
@@ -266,3 +251,101 @@ footer {
     padding-top: 1em;
   }
 }
+
+.display-none{
+  display: none;
+}
+// .black-section{
+//   padding: 2em 1em;
+//   flex-wrap: nowrap;
+//   background-color: #3F474F;
+//   color: $color-gray-lightest;
+//   .section{
+//     background-color: #454e56;
+//   }
+//   .illustration{
+//     align-self: center;
+//     margin-right: 2em;
+//   }
+// }
+
+// .purple-section {
+//   padding: 2em 1em;
+//   flex-wrap: nowrap;
+//   background-color: $color-purple;
+//   color: $color-gray-50;
+//
+//   .card {
+//     background-color: lighten($color-purple, 5%);
+//   }
+//
+//   h1 {
+//     color: white;
+//   }
+//
+//   .illustration {
+//     align-self: center;
+//     margin-right: 2em;
+//   }
+// }
+//
+// .gray-section {
+//   padding: 2em 1em;
+//   background-color: $color-gray-lightest;
+//
+//   .card {
+//     color: $color-gray-700;
+//     background-color: white;
+//   }
+//
+//   h1 {
+//     color: $color-dark-gray-blue;
+//   }
+//
+//   .illustration {
+//     align-self: center;
+//     margin-right: 2em;
+//   }
+// }
+//
+// .white-section {
+//   padding: 2em 1em;
+//   background-color: $color-gray-lightest;
+//
+//   .card {
+//     color: $color-gray-700;
+//     background-color: white;
+//   }
+//
+//   h1 {
+//     color: $color-red;
+//   }
+//
+//   .illustration {
+//     align-self: center;
+//     margin-right: 2em;
+//   }
+// }
+//
+// .darkgray-section {
+//   @extend .gray-section;
+//   background-color: $color-gray-200;
+//
+//   .card {
+//     background-color: $color-gray-50;
+//   }
+//
+//   h1 {
+//     color: #673165;
+//   }
+// }
+//
+// .illustration {
+//   align-self: center;
+//   margin-left: 2em;
+//
+//   img {
+//     width: 180px;
+//     height: 180px;
+//   }
+// }
