@@ -5,32 +5,19 @@ title: Miksi Rails?
 .header
   .overlay
     ul.nav
-      li Mikä on Rails
-      li Miksi Rails
-      li Kuka
-      li Lisää
+      li = link_to "Miksi Rails?", "#miksirails"
+      li = link_to "Suomessa", "#medal"
+      li = link_to "Suomen yrityksen", "#yritys"
     .section-welcome
       .welcome
         .logo.margin-0-5.margin-y
           = image_tag("rails-logo.svg", class:"margin-auto-x")
-        h1.color-white.size-1-25.bold.text-align-center.margin-1.margin-y Suomessa on tällä hetkellä ainakin 89 Rails-teknologiaa hyödyntävää ja kymmeniä Rails-kehitystä tarjoavaa yritystä.
-        / <br/><br/>Syy tai seuraus: Yli 80% Railsia käyttävistä suomalaisista yrityksistä tekee voittoa.
+        h1.color-white.size-1-25.bold.text-align-center.margin-1.margin-y Ruby on Rails, tutummin Rails, on avoimeen lähdekoodiin ja Ruby -ohjelmointikieleen perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
         p.text-align-center
-          = link_to "Lue lisää", "#more", class:"color-white"
+          = link_to "Miksi Rails?", "#miksirails", class:"color-white"
 
 
-#more
-  / .first-section
-  /   .flex-container
-  /     .card-main-1
-  /       h1.uppercase.title Mikä ihmeen Rails? 
-  /       p.bold Ruby on Rails, tutummin Rails, on avoimeen lähdekoodiin ja Ruby -ohjelmointikieleen perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
-  /       p HISTORIA
-  /       p HISTORIA
-  /     .card-main-2
-  /       h1.uppercase.title Mikä Ruby?
-  /       p.bold Ruby on dynaaminen avoimen lähdekoodin ohjelmointikieli joka keskittyy yksinkertaisuuteen ja tuottavuuteen.
-  /       p Rubyn alkujaan kehittänyt japanilainen Yukihiro "Matz" Matsumoto julkaisi sen vuonna 1995. Matsumoton tavoitteena oli kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia. Kansainvälisesti Ruby tuli kehittäjien tietoisuuteen laajemmin vuonna 2000 julkaistun "Programming Ruby" -opasteoksen myötä.
+#miksirails
   .gray-section
     .section-container
       .flex-cards.flex-cards--blue
@@ -38,16 +25,18 @@ title: Miksi Rails?
           .flex.align-center
             .card-icon.card-icon--blue
               =image_tag("./images/love.png")
-            .card-title
-              h2 Rails <3 webbiä ...
-          i.fa.fa-caret-down
+            .flex.vertical.align-start
+              .card-title
+                h2 Rails <3 webbiä ...
+              i.fa.fa-caret-down
           .card-content.padding-1.display-none
             p Kehittäjät, jotka ovat kokeneita Ruby on Rails -ohjelmistokehyksen käytössä, ovat yleensä myös hyvin perillä modernien verkkosovellusten kehittämisestä ja niiden teknologioista. Rails-kehittäjä tiimissä takaa ajan tasalla olevan tuloksen.
           
         .card.card--click
           .flex.align-center.justify-end
-            .card-title--right
-              h2 ... ja Rails -yhteisö rakastaa testaamista.
+            .flex.vertical.align-end
+              .card-title--right
+                h2 ... ja Rails -yhteisö rakastaa testaamista.
               i.fa.fa-caret-down
             .card-icon--right.card-icon--blue
               =image_tag("./images/test.png")
@@ -62,17 +51,20 @@ title: Miksi Rails?
           .flex.align-center
             .card-icon.card-icon--purple
               =image_tag("./images/corporation.png")
-            .card-title
-              h2 Olet hyvässä seurassa...
+            .flex.vertical.align-start
+              .card-title
+                h2 Olet hyvässä seurassa...
               i.fa.fa-caret-down
           .card-content.padding-1.display-none
-            p Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.Railsia käyttävät mm. Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM ja NASA. Suomalaisia Rails -yrityksiä löydät sivun alaosasta.
+            p Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.
+            p.padding-0-5.padding-top Railsia käyttävät mm. Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM ja NASA. Suomalaisia Rails -yrityksiä löydät sivun alaosasta.
 
  
         .card.card--right.card--click
           .flex.align-center.justify-end
-            .card-title--right
-              h2 Teet suurella todennäköisyydellä voittoa.
+            .flex.vertical.align-end
+              .card-title--right
+                h2 Teet suurella todennäköisyydellä voittoa.
               i.fa.fa-caret-down
             .card-icon--right.card-icon--purple
               =image_tag("./images/profit.png")
@@ -87,22 +79,27 @@ title: Miksi Rails?
           .flex.align-center
             .card-icon.card-icon--green
               =image_tag("./images/secure.png")
-            .card-title
-              h2 Olet turvassa...
-          i.fa.fa-caret-down
+            .flex.vertical.align-start
+              .card-title
+                h2 Olet turvassa...
+              i.fa.fa-caret-down
           .card-content.padding-1.display-none
-            p Kenelle soitat jos tarvitset tukea palvelusi kanssa? Eikö valmis tuote olisi parempi kuin avoin lähdekoodi? Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia. Suljetun lähdekoodin aukkoja ei kukaan huomaa korjata – koodi on turvallisempaa, kun se on kaikkien nähtävillä. Railsin kehitykseen on osallistunut yli 4500 kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin (Lähde: Rails Contributors - All time).
+            p Kenelle soitat jos tarvitset tukea palvelusi kanssa?
+            p.padding-0-5.padding-top Eikö valmis tuote olisi parempi kuin avoin lähdekoodi? Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia. Suljetun lähdekoodin aukkoja ei kukaan huomaa korjata – koodi on turvallisempaa, kun se on kaikkien nähtävillä. Railsin kehitykseen on osallistunut yli 4500 kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin (Lähde: Rails Contributors - All time).
 
         .card.card--click
           .flex.align-center.justify-end
-            .card-title--right
-              h2 Etkä jää yksin.
+            .flex.vertical.align-end
+              .card-title--right
+                h2 Etkä jää yksin.
               i.fa.fa-caret-down
             .card-icon--right.card-icon--green
               =image_tag("./images/group.png")
           .card-content.padding-1.display-none
-            p Avoimeen lähdekoodiin perustuvan sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät siis kymmenet asiantuntijat avoimesti ympäri maailmaa. Samalla kuka tahansa voi jatkokehittää tuotettasi, jos toimittajan vaihto tulee ajankohtaiseksi. Lisenssien kanssa sekoilun voit unohtaa. Jos et vielä vakuuttunut, lue lisää siitä miksi avoin lähdekoodi on hyväksi bisneksellesi(http://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html).
-          
+            p
+              |Avoimeen lähdekoodiin perustuvan sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät siis kymmenet asiantuntijat avoimesti ympäri maailmaa. Samalla kuka tahansa voi jatkokehittää tuotettasi, jos toimittajan vaihto tulee ajankohtaiseksi. Lisenssien kanssa sekoilun voit unohtaa. Jos et vielä vakuuttunut, 
+              =link_to 'lue lisää', 'http://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html'
+              |&nbsp;siitä miksi avoin lähdekoodi on hyväksi bisneksellesi.
         /////////////////
   .light-gray-section
     .section-container
@@ -111,8 +108,9 @@ title: Miksi Rails?
           .flex.align-center
             .card-icon.card-icon--red
               =image_tag("./images/progress.png")
-            .card-title
-              h2 Rails ei ole menossa pois...
+            .flex.vertical.align-start
+              .card-title
+                h2 Rails ei ole menossa pois...
               i.fa.fa-caret-down
           .card-content.padding-1.display-none
             p Rails on ollut olemassa ja sitä on kehitetty jo yli 10 vuotta – teknologiamaailmassa se on pitkä aika. Kyse ei siis ole teknologiasta joka olisi katoamassa. Huolimatta siitä, että 2017 web-teknologioissa on jo melkoisesti valinnanvaraa, Ruby on Rails on edelleen suosituimpien joukossa.
@@ -120,30 +118,38 @@ title: Miksi Rails?
 
         .card.card--right.card--click
           .flex.align-center.justify-end
-            .card-title--right
-              h2 ... etkä tarvitse muita teknologioita.
+            .flex.vertical.align-end
+              .card-title--right
+                h2 ... etkä tarvitse muita teknologioita.
               i.fa.fa-caret-down
             .card-icon--right.card-icon--red
               =image_tag("./images/list.png")
           .card-content.padding-1.display-none
-            p Kaikki yleiset työkalut integroituna pakettina. Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita. RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen. Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
+            p Kaikki yleiset työkalut integroituna pakettina. Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita. 
+            p.padding-0-5.padding-top RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen. Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
 
             ///////////////////////////////////////
-
+#medal
   .third-section
     .section-container
+      .medal.padding-1.padding-y.margin-auto-x
+        =image_tag("./images/medal.png")
       .flex.justify-center.flex-cards--white
         .card
-          .medal
-            =image_tag("./images/medal.png")
+          .card-title--third
+            h2 Ruby-kehittäjät ovat onnellisempia
+          .card-content.padding-1.padding-y
+            p Rubya on luonnollista kirjoittaa ja helppoa lukea. Matsumoton tavoitteena oli kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia. Ruby-ohjelmointikielen peruskulmakiviä ovat ohjelmoijan onnellisuus ja tehokkuus. Ruby ei kielenä ole kaikista tehokkain, mutta se on yksi miellyttävimmistä käyttää. Kehittäjän aika ja onnellisuus on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
+            p.padding-0-5.padding-top Rails erottuu lähinnä tarvittavan ohjelmakoodin pienestä määrästä ja konfigurointitarpeen puutteesta. Esimerkiksi sähköpostiviestin lähettäminen käyttäjälle on yleinen tehtävä, joten se luontevasti onnistuu Railsilla yhdellä koodirivillä.
+        
+        .card
           .card-title--third
             h2 Parhaat heistä löytyvät Suomesta
           .card-content.padding-1.padding-y
             p
-            |HackerRank-sivuston teettämän 
+            |HackerRank-sivuston teettämän&nbsp;
             =link_to 'tutkimuksen','http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/'
             |&nbsp;mukaan parhaat Ruby-osaajat ovat Suomessa.
-        .card
           .card-title--right
             h2 ... ja ovi uusille osaajille on aina auki!
 
@@ -153,14 +159,50 @@ title: Miksi Rails?
               =link_to 'Rails Girls','http://railsgirls.com/'
               |&nbsp;on avannut teknologiamaailmaa tytöille ja naisille Ruby on Railsin avulla jo vuodesta 2010 lähtien. Ilmaiset työpajat ovat levinneet kymmeniin maihin eri mantereille.
 
+#yritys
   .fourth-section
     .section-container
       h2.title
         |KETKÄ KÄYTTÄVÄT RAILSIÄ SUOMESSA?
       p.content
         |Keräämme listaa suomalaisista Ruby on Railsiä hyödyntävistä yrityksistä. Ilmoita yrityksesi listaan kertomalla yrityksesi nimi. Lisää myös vapaaehtoinen kommentti siitä, miten Rails on hyödyntänyt
-
-        
+      .flex.justify-around.wrap.padding-1
+        .padding-1
+          .rails-company-logo
+            =link_to "http://google.com", target:"_blank"
+              .flex.align-center
+                =image_tag("http://www.creationlogo.org/wp-content/uploads/2017/08/Logo_TV_2015.png")
+                .padding-0-5.padding-left
+                  p Logo Company Oy
+        .padding-1
+          .rails-company-logo
+            =link_to "http://google.com", target:"_blank"
+              .flex.align-center
+                =image_tag("http://www.creationlogo.org/wp-content/uploads/2017/08/Logo_TV_2015.png")
+                .padding-0-5.padding-left
+                  p Logo Company Oy
+        .padding-1
+          .rails-company-logo
+            =link_to "http://google.com", target:"_blank"
+              .flex.align-center
+                =image_tag("http://www.creationlogo.org/wp-content/uploads/2017/08/Logo_TV_2015.png")
+                .padding-0-5.padding-left
+                  p Logo Company Oy
+        .padding-1
+          .rails-company-logo
+            =link_to "http://google.com", target:"_blank"
+              .flex.align-center
+                =image_tag("http://www.creationlogo.org/wp-content/uploads/2017/08/Logo_TV_2015.png")
+                .padding-0-5.padding-left
+                  p Logo Company Oy
+        .padding-1
+          .rails-company-logo
+            =link_to "http://google.com", target:"_blank"
+              .flex.align-center
+                =image_tag("http://www.creationlogo.org/wp-content/uploads/2017/08/Logo_TV_2015.png")
+                .padding-0-5.padding-left
+                  p Logo Company Oy
+            
 
       
     

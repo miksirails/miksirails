@@ -291,15 +291,9 @@
   background-color: $red;
 }
 
-.fa.fa-caret-down {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-}
-
 .medal {
   img {
-    margin: 1rem auto;
+    margin: auto;
   }
 }
 
@@ -342,14 +336,22 @@ footer {
   display: none;
 }
 
-a {
-  color: $blue;
-  text-decoration: underline;
+.card-content {
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
 }
 
 .content {
   color: $dark-gray;
   padding: 1rem;
+}
+
+.rails-company-logo {
+  img {
+    width: 2rem;
+  }
 }
 // .black-section{
 //   padding: 2em 1em;
