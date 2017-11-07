@@ -143,10 +143,6 @@
   background: $dark-gray;
 }
 
-.fourth-section {
-  background: $lighter-gray;
-}
-
 .flex-cards {
   display: flex;
   justify-content: center;
@@ -169,7 +165,6 @@
 
 .flex-cards--red {
   color: $red;
-  background-color: $lighter-gray;
 }
 
 .flex-cards--white {
@@ -291,6 +286,10 @@
   background-color: $red;
 }
 
+.card-icon--white {
+  border: 1px solid white;
+}
+
 .medal {
   img {
     margin: auto;
@@ -305,11 +304,25 @@
 //   height: 3rem;
 // }
 
-.fourth-section {
+.company-section {
+  background: white;
+
   .title {
     @include font(1);
     font-weight: bold;
     padding: 1rem;
+    text-transform: uppercase;
+    color: $purple;
+    text-align: center;
+  }
+}
+
+.developer-section {
+  background: white;
+
+  .title {
+    @include font(1);
+    font-weight: bold;
     text-transform: uppercase;
     color: $green;
     text-align: center;
@@ -345,12 +358,30 @@ footer {
 
 .content {
   color: $dark-gray;
-  padding: 1rem;
+  text-align: center;
+  @include font(1);
+}
+
+.small-text {
+  @include font(0-75);
 }
 
 .rails-company-logo {
   img {
     width: 2rem;
+  }
+}
+
+table {
+  td,
+  th {
+    border: 1px solid $light-gray;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #c5c3c6;
+    color: $dark-gray;
   }
 }
 // .black-section{
