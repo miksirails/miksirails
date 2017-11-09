@@ -27,7 +27,7 @@
     align-items: center;
   }
   .welcome {
-    max-width: 900px;
+    max-width: 1080px;
     width: 100%;
     height: auto;
 
@@ -59,6 +59,22 @@
       -webkit-transform: scale(1);
     }
   }
+}
+.section-title {
+  @include font(1-5);
+  font-weight: bold;
+  color: $red;
+  position: relative;
+}
+.section-title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+  height: 1px;
+  width: 2em;
+  /* or 100px */
+  border-bottom: 5px solid;
 }
 
 .section-container {
@@ -156,7 +172,6 @@
 
 .flex-cards--purple {
   color: $purple;
-  background-color: $lighter-gray;
 }
 
 .flex-cards--green {
