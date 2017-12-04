@@ -1,0 +1,38 @@
+// @media screen and (max-width: 1267px) {
+//   .card {
+//     width: 100%;
+//   }
+//
+//   .first-section .card-main-1 {
+//     width: 80%;
+//     margin: 1em;
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   // .card {
+//   //   min-width: 90%;
+//   // }
+//   //
+//   // .flex {
+//   //   flex-direction: column;
+//   // }
+//   //
+//   // .section-container {
+//   //   width: auto;
+//   // }
+//
+//   .first-section .card-main-1 {
+//     min-width: 90%;
+//     margin: 2rem;
+//     margin-top: 0;
+//   }
+// }
+
+@media screen and (max-width: 600px) {
+  .card--right {
+    margin-right: 0;
+  }
+  .card--left {
+    margin-left: 0;
+  }
+}

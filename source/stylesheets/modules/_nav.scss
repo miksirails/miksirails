@@ -10,3 +10,15 @@
     color: $color-white;
   }
 }
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    font-size: 0.5rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-decoration: none;
+  }
+}

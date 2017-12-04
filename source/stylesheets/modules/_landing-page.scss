@@ -1,14 +1,37 @@
-.section-welcome {
+.header {
   margin: 0;
-  height: 80vh;
-  background: #cc0000;
-  background: -moz-linear-gradient(top,  #cc0000 0%, #b20000 100%);
-  background: -webkit-linear-gradient(top,  #cc0000 0%,#b20000 100%);
-  background: linear-gradient(to bottom,  #cc0000 0%,#b20000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#b20000',GradientType=0 );
+  height: 60vh;
+  background: url(/images/header-img.jpeg);
+  background-size: cover;
+  position: relative;
+  // background: #cc0000;
+  // background: -moz-linear-gradient(top, #cc0000 0%, #b20000 100%);
+  // background: -webkit-linear-gradient(top, #cc0000 0%,#b20000 100%);
+  // background: linear-gradient(to bottom, #cc0000 0%,#b20000 100%);
+
+  // filter: progid:DXImageTransform.Microsoft.gradient(
+  //     startColorstr= '#cc0000',
+  //     endColorstr='#b20000',
+  //     GradientType=0
+  //   );
   z-index: 1;
+
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(170, 0, 0, 0.7);
+  }
+
+  .section-welcome {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .welcome {
-    max-width: 900px;
+    max-width: 1080px;
     width: 100%;
     height: auto;
 
@@ -16,67 +39,367 @@
       max-width: 300px;
       height: auto;
     }
-
     -webkit-animation-name: welcome;
-    -webkit-animation-duration: .9s;
+    -webkit-animation-duration: 0.9s;
   }
-
   @-webkit-keyframes welcome {
     from {
       -webkit-transform: scale(0);
       opacity: 0;
     }
+
     50% {
-     -webkit-transform: scale(0);
-     opacity: 0;
+      -webkit-transform: scale(0);
+      opacity: 0;
     }
+
     82.5% {
       -webkit-transform: scale(1.03);
       -webkit-animation-timing-function: ease-out;
       opacity: 1;
     }
+
     to {
       -webkit-transform: scale(1);
     }
   }
 }
+.section-title {
+  @include font(1-5);
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+// .section-title:before {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: -0.3em;
+//   height: 1px;
+//   width: 2em;
+//   /* or 100px */
+//   border-bottom: 5px solid;
+// }
 
 .section-container {
-  width: 1080px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.flex-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.first-section {
+  background-color: $color-gray-lightest;
+  margin-top: -3rem;
+  padding: 0 1rem;
+
+  .card-main-1 {
+    background-color: $lighter-gray;
+    background-image: url('/images/icon-rubyonrails.png');
+    background-repeat: no-repeat;
+    background-position-x: 4em;
+    background-position-y: 9em;
+    border-radius: 1px;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 1rem;
+    box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.45);
+    z-index: 1;
+
+    .title {
+      color: $dark-gray;
+      font-weight: bold;
+      max-width: 768px;
+      @include font(1-25);
+      position: relative;
+      margin-bottom: 0.75rem;
+    }
+    .title:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.3em;
+      height: 1px;
+      width: 3em;
+      /* or 100px */
+      border-bottom: 3px solid;
+    }
+
+    p {
+      color: $dark-gray;
+      @include font(1);
+      padding-bottom: 0.25rem;
+    }
+    .bold {
+      padding-bottom: 0.5rem;
+    }
+  }
+
+  .card-main-2 {
+    @extend .card-main-1;
+    background-image: url('/images/ruby-logo-transparent.png');
+    background-repeat: no-repeat;
+    background-size: 16em;
+    background-position-x: 14em;
+    background-position-y: -3em;
+  }
+}
+
+.white-section {
+  background: white;
+}
+.light-gray-section {
+  background: $lighter-gray;
+}
+
+.third-section {
+  background: $dark-gray;
+}
+
+.flex-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.flex-cards--blue {
+  color: $blue;
+}
+
+.flex-cards--purple {
+  color: $purple;
+}
+
+.flex-cards--green {
+  color: $green;
+}
+
+.flex-cards--red {
+  color: $red;
+}
+
+.flex-cards--white {
+  color: $white;
+}
+
+.card {
+  flex-basis: 40%;
+  margin: 1rem;
+  position: relative;
+  // flex-grow: 1;
+}
+.card--click {
+  cursor: pointer;
+}
+
+.card--left {
+  margin-left: -2rem;
+}
+.card--right {
+  margin-right: -2rem;
+}
+
+.card-title {
+  @include font(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+  h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3em;
+    height: 1px;
+    width: 3em;
+    /* or 100px */
+    border-bottom: 3px solid;
+  }
+}
+.card-title--right {
+  @include font(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+  text-align: right;
+  h2:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -0.3em;
+    height: 1px;
+    width: 3em;
+    /* or 100px */
+    border-bottom: 3px solid;
+  }
+}
+
+.card-title--third {
+  @include font(1);
+  h2 {
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+  }
+  h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.3em;
+    height: 1px;
+    width: 3em;
+    /* or 100px */
+    border-bottom: 3px solid;
+  }
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  img {
+    width: 2rem;
+  }
+}
+.card-icon--right {
+  @extend .card-icon;
+  margin-right: 0;
+  margin-left: 1rem;
+}
+
+.card-icon--blue {
+  background-color: $blue;
+}
+.card-icon--purple {
+  background-color: $purple;
+}
+.card-icon--green {
+  background-color: $green;
+}
+
+.card-icon--red {
+  background-color: $red;
+}
+
+.card-icon--white {
+  border: 1px solid white;
+}
+
+.medal {
+  img {
+    margin: auto;
+  }
+}
+
+.card-content {
+  @include font(1);
+}
+
+// .empty-section {
+//   height: 3rem;
+// }
+
+.company-section {
+  background: white;
+
+  .title {
+    @include font(1);
+    font-weight: bold;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $purple;
+    text-align: center;
+  }
+}
+
+.developer-section {
+  background: white;
+
+  .title {
+    @include font(1);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $green;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: $color-red;
+  text-align: center;
+  color: $color-gray-50;
+  padding: 1em 1em 2em;
+}
+
+.logo-footer {
+  width: 100px;
   margin: 0 auto;
 
+  img {
+    padding-top: 1em;
+  }
 }
 
-.bg-rails {
-  background-image: url('~/images/raiteet.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.display-none {
+  display: none;
 }
 
-.section {
-
-  width: 50%;
-
-  min-width: 280px;
-  padding: 1em;
-
-  @include mq(m,l) {
-    width: 100%;
+.card-content {
+  a {
+    color: $blue;
+    text-decoration: underline;
   }
-  .title {
-    max-width: 768px;
-    padding: 0.25rem 0;
-    text-align: center;
-    margin: 0 auto;
-  }
-  p{
+}
 
+.content {
+  color: $dark-gray;
+  text-align: center;
+  @include font(1);
+}
 
-      margin: 0.5rem 0.25rem;
+.small-text {
+  @include font(0-75);
+}
+
+.rails-company-logo {
+  img {
+    width: 6rem;
   }
-  .image-wrapper {
-    max-width: 480px;
-    width: 100%;
-    text-align: center;
+}
+
+table {
+  td,
+  th {
+    border: 1px solid $light-gray;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #c5c3c6;
+    color: $dark-gray;
   }
 }
