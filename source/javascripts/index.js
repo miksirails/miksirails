@@ -14,7 +14,12 @@ function ready(fn) {
 
 ready(function() {
   if (document.getElementById('presentation')) {
-    var deck = bespoke.from('#presentation', [nebula(), keys(), touch(), hash()]);
+    var deck = bespoke.from('#presentation', [
+      nebula(),
+      keys(),
+      touch(),
+      hash()
+    ]);
   }
 });
 
@@ -65,7 +70,8 @@ $(function() {
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+      location.pathname.replace(/^\//, '') ==
+        this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -91,5 +97,8 @@ $(document).ready(function() {
     $(this)
       .find('.card-content')
       .slideToggle();
+    $(this)
+      .find('.fa')
+      .toggleClass('fa-caret-down fa-caret-up');
   });
 });

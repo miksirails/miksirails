@@ -27,3 +27,12 @@
 //     margin-top: 0;
 //   }
 // }
+
+@media screen and (max-width: 600px) {
+  .card--right {
+    margin-right: 0;
+  }
+  .card--left {
+    margin-left: 0;
+  }
+}
