@@ -101,9 +101,15 @@ $('.first-section').height($('.section-1').outerHeight());
 $(document).ready(function() {
   $(window).scroll(function() {
     var position = $(window).scrollTop();
-    console.log(position);
+    // console.log(position);
+    var sectionOne = $('#1').offset().top - 600;
+    var sectionTwo = $('#2').offset().top - 600;
+    var sectionThree = $('#3').offset().top - 600;
+    var sectionFour = $('#4').offset().top - 600;
+    var sectionFive = $('#5').offset().top - 600;
+    var sectionSix = $('#6').offset().top - 600;
 
-    if (position >= 5) {
+    if (position >= sectionOne) {
       $('#1')
         .find('.animate-first')
         .addClass('is-animated');
@@ -124,7 +130,7 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= 735) {
+    if (position >= sectionTwo) {
       $('#2')
         .find('.animate-first')
         .addClass('is-animated');
@@ -145,7 +151,7 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= 1480) {
+    if (position >= sectionThree) {
       $('#3')
         .find('.animate-first')
         .addClass('is-animated');
@@ -166,7 +172,7 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= 2265) {
+    if (position >= sectionFour) {
       $('#4')
         .find('.animate-first')
         .addClass('is-animated');
@@ -187,7 +193,7 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= 3035) {
+    if (position >= sectionFive) {
       $('#5')
         .find('.animate-first')
         .addClass('is-animated');
@@ -208,7 +214,7 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= 3855) {
+    if (position >= sectionSix) {
       $('#6')
         .find('.animate-first')
         .addClass('is-animated');
