@@ -11,7 +11,7 @@ title: Miksi Rails?
     .section-welcome
       .welcome
         .logo.margin-0-5.margin-y
-          = image_tag("miksi-rails-logo.svg", class:"margin-auto-x")
+          = image_tag("miksi-rails-logo2.svg", class:"margin-auto-x")
         h1.color-white.size-1-25.bold.text-align-center.margin-1.margin-y
           |Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails-kehitystä tekevää yritystä. Syy tai seuraus: yli 80% heistä tekee voittoa.
         .text-align-center.padding-1.padding-top.flex.vertical.align-center.justify-center
@@ -43,8 +43,48 @@ title: Miksi Rails?
               =image_tag("./images/test.png")
           .card-content.padding-1.display-none
             p Rails-yhteisö rakastaa testaamista! Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat edistyksellisiä. Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
+  
+    ////////////////////////////////////////
+
+  .light-gray-section
+    .section-container
+      .text-align-center.padding-2.padding-y
+        h2
+          |Ruby on Rails, tutummin Rails, on avoimeen lähdekoodiin ja Ruby -ohjelmointikieleen perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
 
           ////////////////////////////////////////
+  .white-section
+    .section-container
+      .flex-cards.flex-cards--green
+        .card.card--left.card--click
+          .flex.align-center
+            .card-icon.card-icon--green
+              =image_tag("./images/secure.png")
+            .flex.vertical.align-start
+              .card-title
+                h2 Olet turvassa...
+              i.fa.fa-caret-down
+          .card-content.padding-1.display-none
+            p Kenelle soitat jos tarvitset tukea palvelusi kanssa?
+            p.padding-0-5.padding-top Eikö valmis tuote olisi parempi kuin avoin lähdekoodi? Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia.
+            p.padding-0-5.padding-top Suljetun lähdekoodin aukkoja ei kukaan huomaa korjata – koodi on turvallisempaa, kun se on kaikkien nähtävillä. Railsin kehitykseen on osallistunut yli 4500 kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin (Lähde: Rails Contributors - All time).
+
+        .card.card--click
+          .flex.align-center.justify-end
+            .flex.vertical.align-end
+              .card-title--right
+                h2 ...Etkä jää yksin.
+              i.fa.fa-caret-down
+            .card-icon--right.card-icon--green
+              =image_tag("./images/group.png")
+          .card-content.padding-1.display-none
+            p
+              |Avoimeen lähdekoodiin perustuvan sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa. Samalla kuka tahansa voi jatkokehittää tuotettasi, jos toimittajan vaihto tulee ajankohtaiseksi. Lisenssien kanssa sekoilun voit unohtaa.
+            p.padding-0-5.padding-top
+              |Jos et vielä vakuuttunut,
+              =link_to 'lue lisää', 'http://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html'
+              |&nbsp;siitä miksi avoin lähdekoodi on hyväksi bisneksellesi.
+              
   .light-gray-section
     .section-container
       .flex-cards.flex-cards--purple
@@ -159,12 +199,7 @@ title: Miksi Rails?
             p.padding-0-5.padding-top RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen. Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
 
             ///////////////////////////////////////
-  .light-gray-section
-    .section-container
-      .text-align-center.padding-2.padding-y
-        h2
-          |Ruby on Rails, tutummin Rails, on avoimeen lähdekoodiin ja Ruby -ohjelmointikieleen perustuva ohjelmistokehys, jonka pääpaino on tuottavuuden ja ylläpidettävyyden maksimoinnissa.
-
+  
 
 / .company-section.padding-1
 /     .section-container
