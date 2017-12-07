@@ -86,22 +86,22 @@ $(function() {
 $('.first-section').height($('.section-1').outerHeight());
 
 // Cards
-$(document).ready(function() {
-  $('.card--click').on('click', function() {
-    $(this)
-      .find('.card-content')
-      .slideToggle();
-    $(this)
-      .find('.fa')
-      .toggleClass('fa-caret-down fa-caret-up');
-  });
-});
+// $(document).ready(function() {
+//   $('.card--click').on('click', function() {
+//     $(this)
+//       .find('.card-content')
+//       .slideToggle();
+//     $(this)
+//       .find('.fa')
+//       .toggleClass('fa-caret-down fa-caret-up');
+//   });
+// });
 
 // Cards animation
 $(document).ready(function() {
   $(window).scroll(function() {
     var position = $(window).scrollTop();
-    // console.log(position);
+    console.log(position);
 
     if (position >= 5) {
       $('#1')
@@ -109,64 +109,114 @@ $(document).ready(function() {
         .addClass('is-animated');
       setTimeout(function() {
         $('#1')
+          .find('.animate-text')
+          .addClass('is-animated');
+      }, 300);
+      setTimeout(function() {
+        $('#1')
           .find('.animate-second')
           .addClass('is-animated');
-      }, 500);
+      }, 700);
+      setTimeout(function() {
+        $('#1')
+          .find('.animate-text-second')
+          .addClass('is-animated');
+      }, 1000);
     }
 
-    if (position >= 360) {
+    if (position >= 735) {
       $('#2')
         .find('.animate-first')
         .addClass('is-animated');
       setTimeout(function() {
         $('#2')
+          .find('.animate-text')
+          .addClass('is-animated');
+      }, 300);
+      setTimeout(function() {
+        $('#2')
           .find('.animate-second')
           .addClass('is-animated');
-      }, 500);
+      }, 700);
+      setTimeout(function() {
+        $('#2')
+          .find('.animate-text-second')
+          .addClass('is-animated');
+      }, 1000);
     }
 
-    if (position >= 604) {
+    if (position >= 1480) {
       $('#3')
         .find('.animate-first')
         .addClass('is-animated');
       setTimeout(function() {
         $('#3')
+          .find('.animate-text')
+          .addClass('is-animated');
+      }, 300);
+      setTimeout(function() {
+        $('#3')
           .find('.animate-second')
           .addClass('is-animated');
-      }, 500);
+      }, 700);
+      setTimeout(function() {
+        $('#3')
+          .find('.animate-text-second')
+          .addClass('is-animated');
+      }, 1000);
     }
 
-    if (position >= 1066) {
+    if (position >= 2265) {
       $('#4')
         .find('.animate-first')
         .addClass('is-animated');
       setTimeout(function() {
         $('#4')
+          .find('.animate-text')
+          .addClass('is-animated');
+      }, 300);
+      setTimeout(function() {
+        $('#4')
           .find('.animate-second')
           .addClass('is-animated');
-      }, 500);
+      }, 700);
+      setTimeout(function() {
+        $('#4')
+          .find('.animate-text-second')
+          .addClass('is-animated');
+      }, 1000);
     }
 
-    if (position >= 1301) {
+    if (position >= 3035) {
       $('#5')
         .find('.animate-first')
         .addClass('is-animated');
       setTimeout(function() {
         $('#5')
+          .find('.animate-text')
+          .addClass('is-animated');
+      }, 300);
+      setTimeout(function() {
+        $('#5')
           .find('.animate-second')
           .addClass('is-animated');
-      }, 500);
+      }, 700);
+      setTimeout(function() {
+        $('#5')
+          .find('.animate-text-second')
+          .addClass('is-animated');
+      }, 1000);
     }
 
-    if (position >= 1565) {
+    if (position >= 3855) {
       $('#6')
         .find('.animate-first')
         .addClass('is-animated');
       setTimeout(function() {
         $('#6')
-          .find('.animate-second')
+          .find('.animate-text')
           .addClass('is-animated');
-      }, 500);
+      }, 300);
     }
   });
 });
