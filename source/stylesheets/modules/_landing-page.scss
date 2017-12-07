@@ -158,6 +158,9 @@
 .light-gray-section {
   background: $lighter-gray;
 }
+.lighter-gray-section {
+  background: $light-gray;
+}
 
 .third-section {
   background: $dark-gray;
@@ -208,26 +211,22 @@
 }
 
 .card-title {
-  @include font(1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include font(1-5);
   h2 {
     font-weight: bold;
     position: relative;
     margin-bottom: 0.75rem;
-    text-transform: uppercase;
   }
-  h2:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -0.3em;
-    height: 1px;
-    width: 3em;
-    /* or 100px */
-    border-bottom: 3px solid;
-  }
+  // h2:before {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: -0.3em;
+  //   height: 1px;
+  //   width: 3em;
+  //   /* or 100px */
+  //   border-bottom: 3px solid;
+  // }
 }
 .card-title--right {
   @include font(1);
@@ -405,13 +404,15 @@ table {
   }
 }
 
-.animate-first {
+.animate-first,
+.animate-second {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease-in-out;
 }
 
-.animate-second {
+.animate-text,
+.animate-text-second {
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease-in-out;

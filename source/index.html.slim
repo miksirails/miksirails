@@ -23,26 +23,22 @@ title: Miksi Rails?
     .section-container
       .flex-cards.flex-cards--blue
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--blue
               =image_tag("./images/diamond.png")
-            .flex.vertical.align-start
-              .card-title
-                h2 Rails <3 webbiä ...
-              i.fa.fa-caret-down
-          .card-content.padding-1.display-none
-            p Kehittäjät, jotka ovat kokeneita Ruby on Rails -ohjelmistokehyksen käytössä, ovat yleensä myös hyvin perillä modernien verkkosovellusten kehittämisestä ja niiden teknologioista. Rails-kehittäjä tiimissä takaa ajan tasalla olevan tuloksen.
+          .card-content.padding-1
+            .card-title
+              h2 Rails <3 webbiä...
+            p.animate-text Kehittäjät, jotka ovat kokeneita Ruby on Rails -ohjelmistokehyksen käytössä, ovat yleensä myös hyvin perillä modernien verkkosovellusten kehittämisestä ja niiden teknologioista. Rails-kehittäjä tiimissä takaa ajan tasalla olevan tuloksen.
 
         .card.card--click.animate-second
-          .flex.align-center.justify-end
-            .flex.vertical.align-end
-              .card-title--right
-                h2 ...ja Rails -yhteisö rakastaa testaamista.
-              i.fa.fa-caret-down
-            .card-icon--right.card-icon--blue
+          .flex.vertical.align-center
+            .card-icon.card-icon--blue
               =image_tag("./images/test.png")
-          .card-content.padding-1.display-none
-            p Rails-yhteisö rakastaa testaamista! Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat edistyksellisiä. Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
+          .card-content.padding-1
+            .card-title
+              h2 ...ja Rails -yhteisö rakastaa testaamista.
+            p.animate-text-second Rails-yhteisö rakastaa testaamista! Vaikka tämä ei kuulostaisikaan kovin jännittävältä, se on johtanut siihen, että Railsin ympärille kehittyneet testaustyökalut ovat edistyksellisiä. Se tarkoittaa sitä, että Railsin avulla on helppo seurata moderneja testauskäytäntöjä ja kehityksen aikana onnistutaan välttymään useilta ikäviltä yllätyksiltä.
   
     ////////////////////////////////////////
 
@@ -57,60 +53,55 @@ title: Miksi Rails?
     .section-container
       .flex-cards.flex-cards--green
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--green
               =image_tag("./images/secure.png")
-            .flex.vertical.align-start
-              .card-title
-                h2 Olet turvassa...
-              i.fa.fa-caret-down
-          .card-content.padding-1.display-none
-            p Kenelle soitat jos tarvitset tukea palvelusi kanssa?
-            p.padding-0-5.padding-top Eikö valmis tuote olisi parempi kuin avoin lähdekoodi? Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia.
-            p.padding-0-5.padding-top Suljetun lähdekoodin aukkoja ei kukaan huomaa korjata – koodi on turvallisempaa, kun se on kaikkien nähtävillä. Railsin kehitykseen on osallistunut yli 4500 kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin (Lähde: Rails Contributors - All time).
+          .card-content.padding-1
+            .card-title
+              h2 Olet turvassa...
+            .animate-text
+              p Kenelle soitat jos tarvitset tukea palvelusi kanssa?
+              p.padding-0-5.padding-top Eikö valmis tuote olisi parempi kuin avoin lähdekoodi? Aikaisemmin oli yleistä, että valmis tuote valittiin juuri tuen vuoksi. Nykyään on kuitenkin yleistä, että suuretkin yritykset käyttävät avointa lähdekoodia.
+              p.padding-0-5.padding-top Suljetun lähdekoodin aukkoja ei kukaan huomaa korjata – koodi on turvallisempaa, kun se on kaikkien nähtävillä. Railsin kehitykseen on osallistunut yli 4500 kehittäjää ympäri maailman, siksi sen kehitys on nopeaa ja aina reagoinut uusiin tietoturvauhkiin (Lähde: Rails Contributors - All time).
 
         .card.card--click.animate-second
-          .flex.align-center.justify-end
-            .flex.vertical.align-end
-              .card-title--right
-                h2 ...Etkä jää yksin.
-              i.fa.fa-caret-down
-            .card-icon--right.card-icon--green
+          .flex.vertical.align-center.
+            .card-icon.card-icon--green
               =image_tag("./images/group.png")
-          .card-content.padding-1.display-none
-            p
-              |Avoimeen lähdekoodiin perustuvan sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa. Samalla kuka tahansa voi jatkokehittää tuotettasi, jos toimittajan vaihto tulee ajankohtaiseksi. Lisenssien kanssa sekoilun voit unohtaa.
-            p.padding-0-5.padding-top
-              |Jos et vielä vakuuttunut,&nbsp;
-              =link_to 'lue lisää', 'http://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html'
-              |&nbsp;siitä miksi avoin lähdekoodi on hyväksi bisneksellesi.
+          .card-content.padding-1
+            .card-title
+              h2 ...Etkä jää yksin.
+            .animate-text-second
+              p
+                |Avoimeen lähdekoodiin perustuvan sovelluksesi perusarkkitehtuuria ja tietoturvaa kehittävät kymmenet asiantuntijat avoimesti ympäri maailmaa. Samalla kuka tahansa voi jatkokehittää tuotettasi, jos toimittajan vaihto tulee ajankohtaiseksi. Lisenssien kanssa sekoilun voit unohtaa.
+              p.padding-0-5.padding-top
+                |Jos et vielä vakuuttunut,&nbsp;
+                =link_to 'lue lisää', 'http://www.pcworld.com/article/209891/10_reasons_open_source_is_good_for_business.html'
+                |&nbsp;siitä miksi avoin lähdekoodi on hyväksi bisneksellesi.
               
   #3.light-gray-section
     .section-container
       .flex-cards.flex-cards--purple
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--purple
               =image_tag("./images/corporation.png")
-            .flex.vertical.align-start
-              .card-title
-                h2 Olet hyvässä seurassa...
-              i.fa.fa-caret-down
-          .card-content.padding-1.display-none
-            p Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.
-            p.padding-0-5.padding-top Railsia käyttävät mm. Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM ja NASA.
+          .card-content.padding-1
+            .card-title
+              h2 Olet hyvässä seurassa...
+            .animate-text
+              p Lukuisat yritykset ja palvelut ovat nähneet Railsin tarjoamat mahdollisuudet ja valjastaneet ne menestyksekkäästi käyttöönsä.
+              p.padding-0-5.padding-top Railsia käyttävät mm. Basecamp, Twitch, Soundcloud, Zendesk, Github, Airbnb, Hulu, Square, Shopify, Twitter, Siemens, Oracle, IBM ja NASA.
 
 
         .card.card--click.animate-second
-          .flex.align-center.justify-end
-            .flex.vertical.align-end
-              .card-title--right
-                h2 ...ja Teet suurella todennäköisyydellä voittoa.
-              i.fa.fa-caret-down
-            .card-icon--right.card-icon--purple
+          .flex.vertical.align-center
+            .card-icon.card-icon--purple
               =image_tag("./images/profit.png")
-          .card-content.padding-1.display-none
-            p Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails-kehitystä tekevää yritystä. Syy tai seuraus: yli 80% heistä tekee voittoa. (Lähde: Vainu)
+          .card-content.padding-1
+            .card-title
+              h2 ...ja Teet suurella todennäköisyydellä voittoa.
+            p.animate-text-second Suomessa on tällä hetkellä ainakin 89 Railsia käyttävää yritystä ja kymmeniä Rails-kehitystä tekevää yritystä. Syy tai seuraus: yli 80% heistä tekee voittoa. (Lähde: Vainu)
 
           ////////////////////////////////////////////
   .company-section.padding-1
@@ -142,28 +133,26 @@ title: Miksi Rails?
     .section-container
       .flex-cards.flex-cards--red
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--red
               =image_tag("./images/progress.png")
-            .flex.vertical.align-start
-              .card-title
-                h2 Rails ei ole menossa pois...
-              i.fa.fa-caret-down
-          .card-content.padding-1.display-none
-            p Rails on ollut olemassa ja sitä on kehitetty jo yli 10 vuotta – teknologiamaailmassa se on pitkä aika. Kyse ei siis ole teknologiasta joka olisi katoamassa. Huolimatta siitä, että 2017 web-teknologioissa on jo melkoisesti valinnanvaraa, Ruby on Rails on edelleen suosituimpien joukossa.
+              
+          .card-content.padding-1
+            .card-title
+              h2 Rails ei ole menossa pois...
+            p.animate-text Rails on ollut olemassa ja sitä on kehitetty jo yli 10 vuotta – teknologiamaailmassa se on pitkä aika. Kyse ei siis ole teknologiasta joka olisi katoamassa. Huolimatta siitä, että 2017 web-teknologioissa on jo melkoisesti valinnanvaraa, Ruby on Rails on edelleen suosituimpien joukossa.
 
 
         .card.card--click.animate-second
-          .flex.align-center.justify-end
-            .flex.vertical.align-end
-              .card-title--right
-                h2 ...etkä tarvitse muita teknologioita.
-              i.fa.fa-caret-down
-            .card-icon--right.card-icon--red
+          .flex.vertical.align-center
+            .card-icon.card-icon--red
               =image_tag("./images/list.png")
-          .card-content.padding-1.display-none
-            p Kaikki yleiset työkalut integroituna pakettina. Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita.
-            p.padding-0-5.padding-top RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen. Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
+          .card-content.padding-1
+            .card-title
+              h2 ...etkä tarvitse muita teknologioita.
+            .animate-text-second
+              p Kaikki yleiset työkalut integroituna pakettina. Ruby, Rails ja RubyGems:in kattavat kirjastokokoelmat riittävät usein tukemaan koko sovelluksen tarpeet ja muita teknologioita ei tarvita.
+              p.padding-0-5.padding-top RubyGems on turvallinen ja tehokas tapa jakaa Ruby-kirjastoja, jotta kehittäjät voivat helposti hyödyntää jo valmista lähdekoodia sovellusten bisneslogiikan tuottamiseen. Rubylle löytyy kymmeniätuhansia hyvälaatuisia kirjastoja, joilla kehittäjä voi nopeasti tuoda sovellukseen ominaisuuksia kuten esimerkiksi: ostoskori, kirjautuminen, Facebook-integraatio, PDF-luonti, Excel-tiedon lukeminen ja kirjoittaminen jne.
 
             ///////////////////////////////////////
   
@@ -199,70 +188,66 @@ title: Miksi Rails?
     .section-container
       .flex-cards.flex-cards--blue
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--blue
               =image_tag("./images/love.png")
-            .flex.vertical.align-start
-              .card-title--third
-                h2 Ruby-kehittäjät ovat onnellisempia...
-              i.fa.fa-caret-down
-          .card-content.padding-1.padding-y.display-none
-            p Ruby-ohjelmointikieltä on luonnollista kirjoittaa ja helppoa lukea. Matsumoton tavoitteena oli kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia.
-            p.padding-0-5.padding-top Rubyn peruskulmakiviä ovat ohjelmoijan onnellisuus ja tehokkuus. Se ei kielenä ole kaikista tehokkain, mutta yksi miellyttävimmistä käyttää. Kehittäjän aika ja onnellisuus on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
-            p.padding-0-5.padding-top Rails erottuu lähinnä tarvittavan ohjelmakoodin pienestä määrästä ja konfigurointitarpeen puutteesta. Esimerkiksi sähköpostiviestin lähettäminen käyttäjälle on yleinen tehtävä, joten se luontevasti onnistuu Railsilla yhdellä koodirivillä.
+          .card-content.padding-1.padding-y
+            .card-title
+              h2 Ruby-kehittäjät ovat onnellisempia...
+            .animate-text
+              p Ruby-ohjelmointikieltä on luonnollista kirjoittaa ja helppoa lukea. Matsumoton tavoitteena oli kehittää ohjelmointikieli, joka tekee ohjelmoinnista nautittavaa ja kehittäjistä onnellisia.
+              p.padding-0-5.padding-top Rubyn peruskulmakiviä ovat ohjelmoijan onnellisuus ja tehokkuus. Se ei kielenä ole kaikista tehokkain, mutta yksi miellyttävimmistä käyttää. Kehittäjän aika ja onnellisuus on usein arvokkaampaa kuin teoreettisesti nopeammalla kielellä saatavat hyödyt.
+              p.padding-0-5.padding-top Rails erottuu lähinnä tarvittavan ohjelmakoodin pienestä määrästä ja konfigurointitarpeen puutteesta. Esimerkiksi sähköpostiviestin lähettäminen käyttäjälle on yleinen tehtävä, joten se luontevasti onnistuu Railsilla yhdellä koodirivillä.
 
         .card.card--click.animate-second
-          .flex.align-center.justify-end
-            .flex.vertical.align-end
-              .card-title--right
-                h2 ... ja ovi uusille osaajille on aina auki!
-              i.fa.fa-caret-down
-            .card-icon--right.card-icon--blue
+          .flex.vertical.align-center
+            .card-icon.card-icon--blue
               =image_tag("./images/community.png")
-          .card-content.padding-1.padding-y.display-none
-            p
-              |Verkossa on laajat kokoelmat opetusvideoita, aktiivisia blogeja sekä ammattimaisesti tuotettuja online-kursseja Rubyn ja Railsin opiskeluun. Rubyn ja Railsin ympärille muodostunut kansainvälinen yhteisö on aina valmis ottamaan sinut avosylin vastaan kun haluat oppia.
-              p.padding-0-5.padding-top
-                |Suomalaislähtöinen&nbsp;
-                =link_to 'Rails Girls','http://railsgirls.com/'
-                |&nbsp;on avannut teknologiamaailmaa tytöille ja naisille Ruby on Railsin avulla jo vuodesta 2010 lähtien. Ilmaiset työpajat ovat levinneet kymmeniin maihin eri mantereille.
+          .card-content.padding-1.padding-y
+            .card-title
+              h2 ... ja ovi uusille osaajille on aina auki!
+            .animate-text-second
+              p
+                |Verkossa on laajat kokoelmat opetusvideoita, aktiivisia blogeja sekä ammattimaisesti tuotettuja online-kursseja Rubyn ja Railsin opiskeluun. Rubyn ja Railsin ympärille muodostunut kansainvälinen yhteisö on aina valmis ottamaan sinut avosylin vastaan kun haluat oppia.
+                p.padding-0-5.padding-top
+                  |Suomalaislähtöinen&nbsp;
+                  =link_to 'Rails Girls','http://railsgirls.com/'
+                  |&nbsp;on avannut teknologiamaailmaa tytöille ja naisille Ruby on Railsin avulla jo vuodesta 2010 lähtien. Ilmaiset työpajat ovat levinneet kymmeniin maihin eri mantereille.
 
   #6.third-section
     .section-container
       .flex-cards.flex-cards--white
         .card.card--click.animate-first
-          .flex.align-center
+          .flex.vertical.align-center
             .card-icon.card-icon--white
               =image_tag("./images/medal.png")
-            .flex.vertical.align-start
-              .card-title--third
-                h2 Parhaat kehittäjät löytyvät Suomesta!
-                i.fa.fa-caret-down
+          .card-content.padding-1.padding-y
+            .card-title
+              h2 Parhaat kehittäjät löytyvät Suomesta!
+            .animate-text
+              table
+                tr
+                  th.text-align-center.bold Top-scoring countries by skill
+                tr
+                  th Country
+                  th Skill
+                tr
+                  td Finland
+                  td Ruby
+                tr
+                  td France
+                  td C++
+                tr
+                  td Hong Kong
+                  td Python
+                tr
+                  td Poland
+                  td Java
 
-          .card-content.padding-1.padding-y.display-none
-            table
-              tr
-                th.text-align-center.bold Top-scoring countries by skill
-              tr
-                th Country
-                th Skill
-              tr
-                td Finland
-                td Ruby
-              tr
-                td France
-                td C++
-              tr
-                td Hong Kong
-                td Python
-              tr
-                td Poland
-                td Java
-
-            p.padding-0-5.padding-top
-            |HackerRank-sivuston teettämän&nbsp;
-            =link_to 'tutkimuksen','http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/'
-            |&nbsp;mukaan parhaat Ruby-osaajat ovat Suomessa.
+              p.padding-0-5.padding-top
+              |HackerRank-sivuston teettämän&nbsp;
+              =link_to 'tutkimuksen','http://blog.hackerrank.com/which-country-would-win-in-the-programming-olympics/'
+              |&nbsp;mukaan parhaat Ruby-osaajat ovat Suomessa.
 
   footer
     .logo-footer
