@@ -14,12 +14,7 @@ function ready(fn) {
 
 ready(function() {
   if (document.getElementById('presentation')) {
-    var deck = bespoke.from('#presentation', [
-      nebula(),
-      keys(),
-      touch(),
-      hash()
-    ]);
+    var deck = bespoke.from('#presentation', [nebula(), keys(), touch(), hash()]);
   }
 });
 
@@ -70,8 +65,7 @@ $(function() {
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
-      location.pathname.replace(/^\//, '') ==
-        this.pathname.replace(/^\//, '') &&
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
@@ -100,5 +94,79 @@ $(document).ready(function() {
     $(this)
       .find('.fa')
       .toggleClass('fa-caret-down fa-caret-up');
+  });
+});
+
+// Cards animation
+$(document).ready(function() {
+  $(window).scroll(function() {
+    var position = $(window).scrollTop();
+    // console.log(position);
+
+    if (position >= 5) {
+      $('#1')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#1')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
+
+    if (position >= 360) {
+      $('#2')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#2')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
+
+    if (position >= 604) {
+      $('#3')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#3')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
+
+    if (position >= 1066) {
+      $('#4')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#4')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
+
+    if (position >= 1301) {
+      $('#5')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#5')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
+
+    if (position >= 1565) {
+      $('#6')
+        .find('.animate-first')
+        .addClass('is-animated');
+      setTimeout(function() {
+        $('#6')
+          .find('.animate-second')
+          .addClass('is-animated');
+      }, 500);
+    }
   });
 });

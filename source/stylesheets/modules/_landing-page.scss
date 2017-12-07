@@ -1,6 +1,6 @@
 .header {
   margin: 0;
-  height: 60vh;
+  height: 80vh;
   background: url(/images/header-img.jpeg);
   background-size: cover;
   position: relative;
@@ -403,4 +403,21 @@ table {
     background-color: #c5c3c6;
     color: $dark-gray;
   }
+}
+
+.animate-first {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+
+.animate-second {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-in-out;
+}
+
+.is-animated {
+  opacity: 1;
+  transform: translateY(0);
 }
