@@ -181,8 +181,8 @@
   color: $purple;
 }
 
-.flex-cards--green {
-  color: $green;
+.flex-cards--gray {
+  color: $dark-gray;
 }
 
 .flex-cards--red {
@@ -296,8 +296,8 @@
 .card-icon--purple {
   background-color: $purple;
 }
-.card-icon--green {
-  background-color: $green;
+.card-icon--gray {
+  background-color: $dark-gray;
 }
 
 .card-icon--red {
@@ -326,10 +326,9 @@
   background: white;
 
   .title {
-    @include font(1);
+    @include font(1-25);
     font-weight: bold;
     padding: 1rem;
-    text-transform: uppercase;
     color: $purple;
     text-align: center;
   }
