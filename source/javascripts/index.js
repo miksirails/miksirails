@@ -102,12 +102,12 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var position = $(window).scrollTop();
     // console.log(position);
-    var sectionOne = $('#1').offset().top - 600;
-    var sectionTwo = $('#2').offset().top - 600;
-    var sectionThree = $('#3').offset().top - 600;
-    var sectionFour = $('#4').offset().top - 600;
-    var sectionFive = $('#5').offset().top - 600;
-    var sectionSix = $('#6').offset().top - 600;
+    var sectionOne = $('#1').offset().top - 800;
+    var sectionTwo = $('#2').offset().top - 800;
+    var sectionThree = $('#3').offset().top - 800;
+    var sectionFour = $('#4').offset().top - 800;
+    var sectionFive = $('#5').offset().top - 800;
+    var sectionSix = $('#6').offset().top - 800;
 
     if (position >= sectionOne) {
       $('#1')

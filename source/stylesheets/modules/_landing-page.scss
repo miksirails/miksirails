@@ -407,14 +407,14 @@ table {
 .animate-second {
   opacity: 0;
   transform: translateY(100px);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s cubic-bezier(0, 0, 0.07, 0.98);
 }
 
 .animate-text,
 .animate-text-second {
   opacity: 0;
   transform: translateY(100px);
-  transition: all 1s ease-in-out;
+  transition: all 0.5s cubic-bezier(0, 0, 0.07, 0.98);
 }
 
 .is-animated {
