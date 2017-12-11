@@ -29,6 +29,12 @@
 // }
 
 @media screen and (max-width: 600px) {
+  .header .welcome .logo img {
+    max-width: 300px;
+  }
+  .card {
+    flex-basis: 100%;
+  }
   .card--right {
     margin-right: 0;
   }
