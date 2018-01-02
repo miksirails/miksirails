@@ -15,8 +15,6 @@ env:
 before_install:
   - mkdir -p "$HOME/bin"
   - export PATH="$HOME/bin:$PATH"
-  - '[ -f "$HOME/bin/stout" ] || wget https://github.com/cloudflare/Stout/releases/download/v1.3.1/stout-linux -O "$HOME/bin/stout"'
-  - chmod u+x "$HOME/bin/stout"
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 
 install:

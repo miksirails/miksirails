@@ -1,0 +1,15 @@
+Bucket = "miksirails.fi"
+Region = "eu-west-1"
+Account = "miksirails"
+GzipExtensions = [".html", ".js", ".json", ".css", ".svg", ".xml"]
+DefaultCacheControl = "public, max-age=691200"
+UploadDir = "./build"
+
+[Extension.html]
+CacheControl = "public, s-maxage=300, max-age=30"
+
+[Extension.xml]
+CacheControl = "public, s-maxage=300, max-age=300"
+
+[Extension.json]
+CacheControl = "public, s-maxage=300, max-age=300"
