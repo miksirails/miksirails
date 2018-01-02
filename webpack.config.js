@@ -67,7 +67,7 @@ var siteConfig = {
       // },
       {
         test: /\.(ttf|eot|svg|woff2?)(\?[\s\S]+)?$/,
-        loader: "file",
+        loader: "file?publicPath=/&outputPath=fonts/",
       },
     ],
   },
