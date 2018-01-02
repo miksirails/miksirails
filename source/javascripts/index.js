@@ -1,5 +1,5 @@
 import $ from "jquery";
-import "font-awesome-loader";
+import "font-awesome/scss/font-awesome.scss";
 
 function ready(fn) {
   if (document.readyState != "loading") {
