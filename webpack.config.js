@@ -3,16 +3,17 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var Clean = require("clean-webpack-plugin");
 
 var definePlugin = new webpack.DefinePlugin({
-  __DEVELOPMENT__: JSON.stringify(JSON.parse(process.env.BUILD_DEVELOPMENT || false)),
-  __PRODUCTION__: JSON.stringify(JSON.parse(process.env.BUILD_PRODUCTION || false))
+  __DEVELOPMENT__: JSON.stringify(
+    JSON.parse(process.env.BUILD_DEVELOPMENT || false)
+  ),
+  __PRODUCTION__: JSON.stringify(
+    JSON.parse(process.env.BUILD_PRODUCTION || false)
+  ),
 });
 
 var siteConfig = {
   entry: {
-    index: [
-      "./source/stylesheets/index.scss",
-      "./source/javascripts/index.js"
-    ]
+    index: ["./source/stylesheets/index.scss", "./source/javascripts/index.js"],
   },
 
   resolve: {
@@ -33,7 +34,7 @@ var siteConfig = {
         query: {
           // cacheDirectory: true,
           // presets: ["es2015", "stage-0", "babel-preset-react", "react"]
-          presets: ["es2015", "stage-0"]
+          presets: ["es2015", "stage-0"],
         },
       },
 
@@ -41,7 +42,7 @@ var siteConfig = {
 
       {
         test: /[\\\/]vendor[\\\/]modernizr\.js$/,
-        loader: "imports?this=>window!exports?window.Modernizr"
+        loader: "imports?this=>window!exports?window.Modernizr",
       },
 
       // Load SCSS
@@ -50,22 +51,28 @@ var siteConfig = {
         loader: ExtractTextPlugin.extract(
           "style",
           "css!sass?sourceMap&includePaths[]=" + __dirname + "/node_modules"
-        )
+        ),
       },
 
       // Load plain-ol' vanilla CSS
       { test: /\.css$/, loader: "style!css" },
+
+      // the file-loader emits files
+      {
+        test: /\.(ttf|eot|svg|woff2?)(\?[\s\S]+)?$/,
+        loader: "file",
+      },
     ],
   },
 
   node: {
-    console: true
+    console: true,
   },
 
   plugins: [
     definePlugin,
     new Clean(["tmp"]),
-    new ExtractTextPlugin("stylesheets/index.bundle.css")
+    new ExtractTextPlugin("stylesheets/index.bundle.css"),
     // new webpack.ProvidePlugin({
     //   $: "jquery",
     //   jQuery: "jquery",
@@ -74,4 +81,4 @@ var siteConfig = {
   ],
 };
 
-module.exports = [ siteConfig ];
+module.exports = [siteConfig];
