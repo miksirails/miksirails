@@ -95,7 +95,7 @@ $(document).ready(function() {
     var sectionThree = $('#3').offset().top - 800;
     var sectionFour = $('#4').offset().top - 800;
     var sectionFive = $('#5').offset().top - 800;
-    var sectionSix = $('#6').offset().top - 800;
+    // var sectionSix = $("#6").offset().top - 800;
 
     if (position >= sectionOne) {
       $('#1')
@@ -202,15 +202,15 @@ $(document).ready(function() {
       }, 1000);
     }
 
-    if (position >= sectionSix) {
-      $('#6')
-        .find('.animate-first')
-        .addClass('is-animated');
-      setTimeout(function() {
-        $('#6')
-          .find('.animate-text')
-          .addClass('is-animated');
-      }, 300);
-    }
+    // if (position >= sectionSix) {
+    //   $("#6")
+    //     .find(".animate-first")
+    //     .addClass("is-animated");
+    //   setTimeout(function() {
+    //     $("#6")
+    //       .find(".animate-text")
+    //       .addClass("is-animated");
+    //   }, 300);
+    // }
   });
 });
