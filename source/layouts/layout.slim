@@ -9,7 +9,7 @@ html
     title= current_page.data.title || "Miksi Rails?"
 
     = stylesheet_link_tag "index.bundle"
-    = javascript_include_tag "index.bundle"
+    = javascript_include_tag "index.bundle", async: "async"
   body class=page_classes
     // = partial "/shared/nav"
     = yield
