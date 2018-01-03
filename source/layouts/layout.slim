@@ -7,6 +7,7 @@ html
 
     / Use title if it's in the page YAML frontmatter
     title= current_page.data.title || "Miksi Rails?"
+    link rel="icon" type="image/png" href=asset_path(:images, "favicon.png")
 
     = stylesheet_link_tag "index.bundle"
     = javascript_include_tag "index.bundle", async: "async"
