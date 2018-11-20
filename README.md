@@ -14,7 +14,7 @@
 1. Clone the repo
 
   ```sh
-  git clone git@github.com:kiskolabs/miksi-rails.git
+  git clone git@github.com:miksirails/miksirails.git
   cd miksi-rails
   ```
 
