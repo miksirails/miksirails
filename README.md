@@ -3,7 +3,7 @@
 ## Dependencies
 
 * Ruby 2.3+
-* Node.js 5+
+* Node.js 8+
 
 ## Deployment
 
