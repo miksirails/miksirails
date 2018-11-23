@@ -1,6 +1,7 @@
 var webpack = require("webpack");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var Clean = require("clean-webpack-plugin");
+var path = require("path");
 
 var definePlugin = new webpack.DefinePlugin({
   __DEVELOPMENT__: JSON.stringify(
@@ -17,7 +18,7 @@ var siteConfig = {
   },
 
   resolve: {
-    root: __dirname + "/source/javascripts",
+    modules: [path.join(__dirname, "source/javascripts"), "node_modules"],
   },
 
   output: {
@@ -26,36 +27,41 @@ var siteConfig = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /.*\.js$/,
         exclude: /node_modules|tmp|vendor/,
-        loader: "babel-loader",
-        query: {
-          // cacheDirectory: true,
-          // presets: ["es2015", "stage-0", "babel-preset-react", "react"]
-          presets: ["es2015", "stage-0"],
-        },
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              // cacheDirectory: true,
+              // presets: ["es2015", "stage-0", "babel-preset-react", "react"]
+              presets: ["es2015", "stage-0"],
+            },
+          },
+        ],
       },
 
       // { test: require.resolve("jquery"), loader: "expose?$" },
 
       {
         test: /[\\\/]vendor[\\\/]modernizr\.js$/,
-        loader: "imports?this=>window!exports?window.Modernizr",
+        use: [{loader: "imports?this=>window!exports?window.Modernizr"}],
       },
 
       // Load SCSS
       {
         test: /.*\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          "style",
-          "css!sass?sourceMap&includePaths[]=" + __dirname + "/node_modules"
+        use: ExtractTextPlugin.extract(
+          "css-loader!sass-loader?sourceMap&includePaths[]=" +
+            __dirname +
+            "/node_modules"
         ),
       },
 
       // Load plain-ol' vanilla CSS
-      { test: /\.css$/, loader: "style!css" },
+      {test: /\.css$/, use: [{loader: "style-loader!css"}]},
 
       // the url-loader uses DataUrls.
       // the file-loader emits files.
@@ -67,7 +73,15 @@ var siteConfig = {
       // },
       {
         test: /\.(ttf|eot|svg|woff2?)(\?[\s\S]+)?$/,
-        loader: "file?publicPath=/&outputPath=fonts/",
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              publicPath: "/fonts/",
+              outputPath: "fonts/",
+            },
+          },
+        ],
       },
     ],
   },
