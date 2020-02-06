@@ -16,6 +16,7 @@ before_install:
   - mkdir -p "$HOME/bin"
   - export PATH="$HOME/bin:$PATH"
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
+  - gem install bundler:1.15.3
 
 install:
   - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
