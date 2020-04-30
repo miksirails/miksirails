@@ -32,7 +32,7 @@
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
     "font-awesome-loader": "^1.0.2",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "node-sass": "^4.0.0",
     "sass-loader": "^7.1.0",
     "schema-utils": "^0.4.7",
