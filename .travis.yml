@@ -6,7 +6,7 @@ cache:
     - $HOME/bin
 
 rvm:
-  - 2.3.1
+  - 2.5
 env:
   global:
     - TRAVIS_NODE_VERSION="8"
