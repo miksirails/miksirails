@@ -26,7 +26,7 @@ end
 activate :directory_indexes
 
 webpack_cmd = if build?
-  "BUILD_PRODUCTION=1  ./node_modules/webpack/bin/webpack.js --bail -p"
+  "BUILD_PRODUCTION=1  ./node_modules/webpack/bin/webpack.js --mode=production"
 else
   "BUILD_DEVELOPMENT=1 ./node_modules/webpack/bin/webpack.js --watch -d --progress --color"
 end

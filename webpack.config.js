@@ -1,5 +1,5 @@
 var webpack = require("webpack");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var Clean = require("clean-webpack-plugin");
 var path = require("path");
 
@@ -47,21 +47,31 @@ var siteConfig = {
 
       {
         test: /[\\\/]vendor[\\\/]modernizr\.js$/,
-        use: [{loader: "imports?this=>window!exports?window.Modernizr"}],
+        use: [{ loader: "imports?this=>window!exports?window.Modernizr" }],
       },
 
       // Load SCSS
       {
         test: /.*\.scss$/,
-        use: ExtractTextPlugin.extract(
-          "css-loader!sass-loader?sourceMap&includePaths[]=" +
-            __dirname +
-            "/node_modules"
-        ),
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+              sassOptions: {
+                includePaths: [__dirname + "/node_modules"],
+              },
+            },
+          },
+        ],
       },
 
       // Load plain-ol' vanilla CSS
-      {test: /\.css$/, use: [{loader: "style-loader!css"}]},
+      { test: /\.css$/, use: [{ loader: "style-loader!css" }] },
 
       // the url-loader uses DataUrls.
       // the file-loader emits files.
@@ -93,7 +103,7 @@ var siteConfig = {
   plugins: [
     definePlugin,
     new Clean(["tmp"]),
-    new ExtractTextPlugin("stylesheets/index.bundle.css"),
+    new MiniCssExtractPlugin({ filename: "stylesheets/index.bundle.css" }),
     // new webpack.ProvidePlugin({
     //   $: "jquery",
     //   jQuery: "jquery",
